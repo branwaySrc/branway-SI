@@ -9,15 +9,6 @@ type TagAttributes<T> = Omit<HTMLAttributes<T>, "className"> & {
   };
 };
 
-export const Body: React.FC<HTMLAttributes<HTMLBodyElement>> = (props) => {
-  const { className, ...otherProps } = props;
-  return (
-    <body
-      className={`min-w-sm overflow-x-hidden h-full ${className}`}
-      {...otherProps}
-    />
-  );
-};
 
 export const Inner: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className, ...otherProps } = props;

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Body, Inner } from "@/manager/lib/HTMLElements";
+import { Inner } from "@/manager/lib/HTMLElements";
 import { NotoSans } from "@/manager/lib/@";
 import { ChakraProvider } from "@/manager/provider/chakraProvider";
 import "./globals.css";
@@ -16,9 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Body className={NotoSans.className}>
+      <body className={`${NotoSans.className}`}>
         <ChakraProvider>{children}</ChakraProvider>
-      </Body>
+      </body>
     </html>
   );
 }

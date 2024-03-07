@@ -7,7 +7,6 @@ import {
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
 import { RefObject, useRef } from "react";

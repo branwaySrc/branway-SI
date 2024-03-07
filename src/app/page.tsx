@@ -21,6 +21,7 @@ import { BsShop } from "react-icons/bs";
 import Image from "next/image";
 import { AccordionList } from "@/components/container/AccordionList";
 import { DrawerPopUp } from "@/components/container/DrawerPopUp";
+import { EventDrawer } from "@/components/container/EventDrawer";
 
 export default function Home() {
   return (
@@ -90,7 +91,10 @@ export default function Home() {
                 <Box className="bg-yellow-500 p-1 rounded-full"></Box>
               </Box>
               <Container className="absolute top-0 right-4 mt-4">
-                <Box className="border-2 border-zinc-950 bg-[#FFFFFF05] h-9 w-[300px] rounded-md flex items-center">
+                <Box
+                  breakClass={{ lg: "lg:w-[380px]", sm: "sm:w-[320px]" }}
+                  className="border-2 border-zinc-950 bg-[#FFFFFF05] h-9 w-[250px] rounded-md flex items-center"
+                >
                   <Text className="text-sm text-slate-300 mb-1 px-4">
                     imweb.me
                   </Text>
@@ -203,7 +207,10 @@ export default function Home() {
                 <Box className="bg-yellow-500 p-1 rounded-full"></Box>
               </Box>
               <Container className="absolute top-0 right-4 mt-4">
-                <Box className="border-2 border-zinc-950 bg-[#FFFFFF05] h-9 w-[300px] rounded-md flex items-center">
+                <Box
+                  breakClass={{ lg: "lg:w-[380px]", sm: "sm:w-[320px]" }}
+                  className="border-2 border-zinc-950 bg-[#FFFFFF05] h-9 w-[250px] rounded-md flex items-center"
+                >
                   <Text className="text-sm text-slate-300 mb-1 px-4">
                     imweb.me
                   </Text>
@@ -312,6 +319,7 @@ export default function Home() {
           </Container>
         </Inner>
       </Section>
+      <EventDrawer />
       <Container className="h-[200px]" />
     </main>
   );
