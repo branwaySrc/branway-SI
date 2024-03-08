@@ -16,8 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${NotoSans.className}`}>
-        <ChakraProvider>{children}</ChakraProvider>
+      <body className={NotoSans.className}>
+        <ChakraProvider >{children}</ChakraProvider>
       </body>
     </html>
   );

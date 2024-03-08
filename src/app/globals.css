@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 html,
-body,
-:root {
-  height: 100vw;
-  width: 100vw;
+body {
   margin: 0 auto;
   box-sizing: border-box;
   background: rgb(9 9 11); /*bg-zinc-950*/

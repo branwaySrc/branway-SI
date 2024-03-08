@@ -1,7 +1,7 @@
 export const IMWEB_BADGE_LABEL = "💡 브랜웨이와 함께하는 IT 솔루션";
 export const IMWEB_HERO_TITLE = "관리 및 수정이 쉬운 사이트를 만들어드림";
 export const IMWEB_HERO_DESC =
-  "디자인+기획+제작+DB+관리자페이지 모두 올인원 서비스! 어렵게 느껴지던 홈페이지 제작, 이제 고민하지마세요! 관리 및 수정이 쉽고 편한 아임웹·윅스 제작으로 사업주 분들의 부담을 덜어드립니다! 코딩을 모르셔도 제작된 홈페이지를 편하게 수정하실 수 있습니다";
+  "디자인+기획+제작+DB+관리자페이지 모두 올인원 서비스! 어렵게 느껴지던 홈페이지 제작 이제 고민하지마세요!";
 
 export const IMWEB_VALID_SECTION_TITLE = "아임웹으로 뭘 만드는가";
 export const IMWEB_VALID_SECTION_DESC = "아임웹은 이유가 있다. 왜 아임웹인가";
