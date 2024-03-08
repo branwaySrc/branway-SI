@@ -41,7 +41,7 @@ export default function Home() {
       <Section className="relative overflow-hidden">
         <Inner>
           <Container className="px-2 mt-[200px]">
-            <Box className="flex flex-col items-center gap-3">
+            <Box className="flex flex-col items-center gap-2">
               <Title className="font-bold text-2xl">
                 {CONFIG.IMWEB_VALID_SECTION_TITLE}
               </Title>
@@ -67,13 +67,20 @@ export default function Home() {
           <Container className="flex flex-col items-center px-4 relative">
             <Box className="h-[100px] w-[2px] bg-gradient-to-t from-rose-500 mb-[-2px] mt-20" />
             <Box className="bg-rose-500 p-3 rounded-full" />
-            <Box className="flex flex-col items-center my-10 gap-3">
+            <Box className="flex flex-col items-center mt-10 gap-2">
               <Title className="font-bold text-2xl">
                 {CONFIG.IMWEB_VALID_SECTION_TITLE}
               </Title>
-              <Text className="text-slate-400">
+              <Text className="text-slate-400 mb-8">
                 {CONFIG.IMWEB_VALID_SECTION_DESC}
               </Text>
+              <Image
+                src={"/branwayTell.png"}
+                alt="curious face image"
+                width={124}
+                height={180}
+                className="mb-[-150px]"
+              />
             </Box>
             <Figure className="relative rounded-2xl overflow-hidden border-[1px] border-zinc-900">
               <Image
@@ -102,8 +109,14 @@ export default function Home() {
               </Container>
             </Figure>
           </Container>
-          <Box className="flex flex-col items-center mt-20 gap-3">
-            <Title className="font-bold text-2xl">
+          <Box className="flex flex-col items-center mt-20 gap-2">
+            <Image
+              src={"/thumbup.png"}
+              alt="thumbUp"
+              width={120}
+              height={120}
+            />
+            <Title className="font-bold text-2xl mt-4">
               {CONFIG.IMWEB_VALID_REASONS_TITLE}
             </Title>
             <Text className="text-slate-400">
@@ -183,13 +196,20 @@ export default function Home() {
           <Container className="flex flex-col items-center px-4 relative">
             <Box className="h-[100px] w-[2px] bg-gradient-to-t from-green-500 mb-[-2px] mt-20" />
             <Box className="bg-green-500 p-3 rounded-full" />
-            <Box className="flex flex-col items-center my-10 gap-3">
+            <Box className="flex flex-col items-center mt-10 gap-3">
               <Title className="font-bold text-2xl">
                 브랜웨이 X 아임웹의 장점
               </Title>
-              <Text className="text-slate-400">
+              <Text className="text-slate-400 mb-10">
                 고객님께서 필요하신 것들을 아낌없이 드려요.
               </Text>
+              <Image
+                src={"/branwayUp.png"}
+                alt="happy women image"
+                width={240}
+                height={240}
+                className="mb-[-150px]"
+              />
             </Box>
             <Figure className="relative rounded-2xl overflow-hidden border-[1px] border-zinc-900">
               <Image
@@ -269,13 +289,20 @@ export default function Home() {
           <Container className="flex flex-col items-center px-4 relative">
             <Box className="h-[100px] w-[2px] bg-gradient-to-t from-yellow-500 mb-[-2px] mt-20" />
             <Box className="bg-yellow-500 p-3 rounded-full" />
-            <Box className="flex flex-col items-center my-10 gap-3">
+            <Box className="flex flex-col items-center mt-10 gap-3">
               <Title className="font-bold text-2xl">
                 의뢰전 무엇이 필요한지 알려드릴게요!
               </Title>
-              <Text className="text-slate-400">
+              <Text className="text-slate-400 mb-8">
                 없으셔도 괜찮아요, 함께 만들어 나가보아요!
               </Text>
+              <Image
+                src={"/branwayQNA.png"}
+                alt="thumbUp"
+                width={240}
+                height={240}
+                className="mb-[-180px]"
+              />
             </Box>
             <Figure className="relative rounded-2xl overflow-hidden border-[1px] border-zinc-900">
               <Image
