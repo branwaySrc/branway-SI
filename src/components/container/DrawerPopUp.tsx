@@ -26,12 +26,7 @@ export const DrawerPopUp = () => {
       >
         포트폴리오 보기
       </button>
-      <Drawer
-        isOpen={isOpen}
-        placement="bottom"
-        onClose={onClose}
-        size={"full"}
-      >
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size={"full"}>
         <DrawerOverlay />
         <DrawerContent className="relative">
           <DrawerHeader className="bg-stone-950 text-slate-200 z-10 flex justify-between">
