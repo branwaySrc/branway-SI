@@ -32,7 +32,7 @@ export const HeroSectionLayout = (props: HeroSectionTm) => {
             )}
           </Container>
           <Container className="flex justify-center mt-[60px]">
-            <Image src={"/hello_.png"} alt="hello" height={210} width={200} />
+            <Image src={"/hello_.png"} alt="hello" height={190} width={180} />
             {/* <Box className="font-black text-3xl max-w-[80%] text-center leading-[40px]">
               {props.title || "Title"}
             </Box> */}
