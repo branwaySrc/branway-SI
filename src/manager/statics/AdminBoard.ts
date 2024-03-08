@@ -1,4 +1,4 @@
-export const IMWEB_BADGE_LABEL = "💡 브랜웨이와 함께하는 IT 솔루션";
+export const IMWEB_BADGE_LABEL = "브랜웨이와 함께하는 IT 솔루션";
 export const IMWEB_HERO_TITLE = "관리 및 수정이 쉬운 사이트를 만들어드림";
 export const IMWEB_HERO_DESC =
   "디자인+기획+제작+DB+관리자페이지 모두 올인원 서비스! 어렵게 느껴지던 홈페이지 제작 이제 고민하지마세요!";

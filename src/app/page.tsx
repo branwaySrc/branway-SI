@@ -27,8 +27,6 @@ export default function Home() {
   return (
     <main className="bg-[#050505]">
       <Navigation />
-      <AbsoluteBg className="bg-gradient-to-b from-[#88133705] h-40 w-full absolute" />
-      <AbsoluteBg className="bg-gradient-to-b from-[#751C7610] h-40 w-full absolute" />
       <Inner>
         <Container>
           <HeroSectionLayout
