@@ -26,15 +26,16 @@ export const HeroSectionLayout = (props: HeroSectionTm) => {
         <Section className="z-10 flex flex-col items-center border-[#FFFFFF18] h-[430px] border-[1px] m-7 bg-black bg-opacity-50">
           <Container className="mt-8">
             {props.badgeLabel && (
-              <Box className="text-sm font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 inline-block text-transparent bg-clip-text">
+              <Box className="text-sm font-bold bg-gradient-to-r from-fuchsia-600 to-pink-600 inline-block text-transparent bg-clip-text">
                 {props.badgeLabel}
               </Box>
             )}
           </Container>
           <Container className="flex justify-center mt-[60px]">
-            <Box className="font-black text-3xl max-w-[80%] text-center leading-[40px]">
+            <Image src={"/hello_.png"} alt="hello" height={210} width={200} />
+            {/* <Box className="font-black text-3xl max-w-[80%] text-center leading-[40px]">
               {props.title || "Title"}
-            </Box>
+            </Box> */}
           </Container>
           <Container className="flex justify-center mt-16 relative">
             <Box className="text-slate-400 max-w-[80%] text-center leading-7 text-sm">
