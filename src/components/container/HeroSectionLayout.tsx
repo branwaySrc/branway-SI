@@ -15,12 +15,12 @@ interface HeroSectionTm {
 
 export const HeroSectionLayout = (props: HeroSectionTm) => {
   return (
-    <Section className="border-[1px] border-[#FFFFFF18] bg-[#000000] relative">
+    <Section className="border-[1px] border-[#FFFFFF18] bg-[#000000] relative overflow-hidden">
       <Image
-        src={"/fallingBlue.jpg"}
+        src={"/neon2.jpg"}
         fill
         alt="background"
-        className="absolute opacity-30 top-0"
+        className="absolute opacity-70 top-0"
       />
       <Section className="border-[1px] border-[#FFFFFF18] m-5 bg-[#00000050] relative bg-clip-padding backdrop-filter bg-opacity-80">
         <Section className="z-10 flex flex-col items-center border-[#FFFFFF18] h-[430px] border-[1px] m-7 bg-black bg-opacity-50">
