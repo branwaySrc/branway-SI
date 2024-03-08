@@ -27,7 +27,7 @@ export const EventDrawer = () => {
     <>
       <Box
         style={{ display: show === true ? "flex" : "none" }}
-        className="text-slate-300 font-bold mt-6 w-full h-[80px] fixed bottom-0 bg-[#00000050] border-t-[1px] border-green-900 items-center justify-between px-4 bg-clip-padding backdrop-filter backdrop-blur-lg"
+        className="text-slate-300 font-bold mt-6 w-full h-[80px] fixed bottom-0 bg-[#00000050] border-t-[1px] border-green-900 items-center justify-between px-4 bg-clip-padding backdrop-filter backdrop-blur-lg z-50"
       >
         <button ref={btnRef} onClick={onOpen} className="flex flex-col">
           <p className="text-sm text-left text-green-500">

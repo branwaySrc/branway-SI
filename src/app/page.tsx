@@ -43,6 +43,17 @@ export default function Home() {
             <Section className="absolute w-[50%] h-full right-0 bg-gradient-to-b from-[#000000] to-transparent" />
             <Container className="mt-[200px]">
               <Box className="flex flex-col items-center gap-2">
+                <Box className="bg-[#FFFFFF18] h-10 w-[1px] bg-gradient-to-b from-blue-600" />
+                <Container className="z-20 bg-blue-500 p-[0.5px] mt-[-100px] mb-10 rounded-full overflow-hidden">
+                  <Box className="rounded-full overflow-hidden">
+                    <Image
+                      src={"/imweb_name_Logo.jpg"}
+                      alt="imweb_logo"
+                      height={55}
+                      width={55}
+                    />
+                  </Box>
+                </Container>
                 <Title className="font-bold text-2xl z-10">
                   {CONFIG.IMWEB_VALID_SECTION_TITLE}
                 </Title>

@@ -16,8 +16,13 @@ interface HeroSectionTm {
 export const HeroSectionLayout = (props: HeroSectionTm) => {
   return (
     <Section className="border-[1px] border-[#FFFFFF18] bg-[#000000] relative">
-      <Image src={"/darkwall.jpg"} fill alt="background" className="absolute" />
-      <Section className="border-[1px] border-[#FFFFFF18] m-5 bg-[#00000050] relative bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80">
+      <Image
+        src={"/darkwall.jpg"}
+        fill
+        alt="background"
+        className="absolute opacity-30"
+      />
+      <Section className="border-[1px] border-[#FFFFFF18] m-5 bg-[#00000050] relative bg-clip-padding backdrop-filter bg-opacity-80">
         <Section className="z-10 flex flex-col items-center border-[#FFFFFF18] h-[430px] border-[1px] m-7 bg-black bg-opacity-50">
           <Container className="mt-8">
             {props.badgeLabel && (
