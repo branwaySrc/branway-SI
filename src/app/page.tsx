@@ -25,7 +25,7 @@ import { EventDrawer } from "@/components/container/EventDrawer";
 
 export default function Home() {
   return (
-    <main className="bg-[#050505]">
+    <main className="bg-[#050505] px-2">
       <Navigation />
       <Inner>
         <Container>
@@ -38,31 +38,37 @@ export default function Home() {
       </Inner>
       <Section className="relative overflow-hidden">
         <Inner>
-          <Container className="px-2 mt-[200px]">
-            <Box className="flex flex-col items-center gap-2">
-              <Title className="font-bold text-2xl">
-                {CONFIG.IMWEB_VALID_SECTION_TITLE}
-              </Title>
-              <Text className="text-slate-400">
-                {CONFIG.IMWEB_VALID_SECTION_DESC}
-              </Text>
-            </Box>
-            <Box className="flex justify-around mt-10">
-              <SquareBox
-                title={CONFIG.IMWEB_VALID_SERVICES[0].title}
-                desc={CONFIG.IMWEB_VALID_SERVICES[0].desc}
-              />
-              <SquareBox
-                title={CONFIG.IMWEB_VALID_SERVICES[1].title}
-                desc={CONFIG.IMWEB_VALID_SERVICES[1].desc}
-              />
-              <SquareBox
-                title={CONFIG.IMWEB_VALID_SERVICES[2].title}
-                desc={CONFIG.IMWEB_VALID_SERVICES[2].desc}
-              />
-            </Box>
-          </Container>
-          <Container className="flex flex-col items-center px-4 relative">
+          <Section className="border-[1px] border-t-transparent border-[#FFFFFF18] relative">
+            <Section className="border-r-[1px] border-[#FFFFFF18] absolute w-[50%] h-full bg-gradient-to-b from-[#000000] to-transparent" />
+            <Section className="absolute w-[50%] h-full right-0 bg-gradient-to-b from-[#000000] to-transparent" />
+            <Container className="mt-[200px]">
+              <Box className="flex flex-col items-center gap-2">
+                <Title className="font-bold text-2xl z-10">
+                  {CONFIG.IMWEB_VALID_SECTION_TITLE}
+                </Title>
+                <Text className="text-slate-400 z-10">
+                  {CONFIG.IMWEB_VALID_SECTION_DESC}
+                </Text>
+              </Box>
+              <Box className="flex mt-10 z-10 justify-center">
+                <SquareBox
+                  className="border-r-[1px]"
+                  title={CONFIG.IMWEB_VALID_SERVICES[0].title}
+                  desc={CONFIG.IMWEB_VALID_SERVICES[0].desc}
+                />
+                <SquareBox
+                  className="border-r-[1px]"
+                  title={CONFIG.IMWEB_VALID_SERVICES[1].title}
+                  desc={CONFIG.IMWEB_VALID_SERVICES[1].desc}
+                />
+                <SquareBox
+                  title={CONFIG.IMWEB_VALID_SERVICES[2].title}
+                  desc={CONFIG.IMWEB_VALID_SERVICES[2].desc}
+                />
+              </Box>
+            </Container>
+          </Section>
+          <Container className="flex flex-col pb-4 items-center px-4 relative border-[1px] border-[#FFFFFF18] border-t-transparent">
             <Box className="h-[100px] w-[2px] bg-gradient-to-t from-rose-500 mb-[-2px] mt-20" />
             <Box className="bg-rose-500 p-3 rounded-full" />
             <Box className="flex flex-col items-center mt-10 gap-2">
@@ -80,7 +86,7 @@ export default function Home() {
                 className="mb-[-150px]"
               />
             </Box>
-            <Figure className="relative rounded-2xl overflow-hidden border-[1px] border-zinc-900">
+            <Figure className="relative overflow-hidden border-[1px] border-[#FFFFFF18] rounded-t-xl">
               <Image
                 src={"/imweb_logo.jpg"}
                 alt="imweb image"
