@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Container,
   Box,
@@ -16,14 +18,14 @@ interface HeroSectionTm {
 export const HeroSectionLayout = (props: HeroSectionTm) => {
   return (
     <Section className="border-[1px] border-[#FFFFFF18] bg-[#000000] relative overflow-hidden">
-      <Image
-        src={"/neon2.jpg"}
-        fill
-        alt="background"
-        className="absolute opacity-70 top-0"
+      <iframe
+        src="https://my.spline.design/vaporwavebackground-96e11217d764f803e94a6d6eaeb5dcf8/"
+        width="200%"
+        height="200%"
+        className="absolute"
       />
-      <Section className="border-[1px] border-[#FFFFFF18] m-5 bg-[#00000050] relative bg-clip-padding backdrop-filter bg-opacity-80">
-        <Section className="z-10 flex flex-col items-center border-[#FFFFFF18] h-[430px] border-[1px] m-7 bg-black bg-opacity-50">
+      <Section className="border-[1px] border-[#FFFFFF30] m-5 bg-[#00000050] relative bg-clip-padding backdrop-filter bg-opacity-80">
+        <Section className="z-10 flex flex-col items-center border-[#FFFFFF30] h-[430px] border-[1px] m-7 bg-black bg-opacity-50">
           <Container className="mt-8">
             {props.badgeLabel && (
               <Box className="text-sm font-bold bg-gradient-to-r from-blue-600 to-purple-600 inline-block text-transparent bg-clip-text">
@@ -42,8 +44,8 @@ export const HeroSectionLayout = (props: HeroSectionTm) => {
             </Box>
           </Container>
         </Section>
-        <Container className="absolute border-t-[1px] border-[#FFFFFF18] w-full h-[75%] bottom-0" />
-        <Container className="absolute border-t-[1px] border-[#FFFFFF18] w-full h-[40%] bottom-0" />
+        <Container className="absolute border-t-[1px] border-[#FFFFFF30] w-full h-[75%] bottom-0" />
+        <Container className="absolute border-t-[1px] border-[#FFFFFF30] w-full h-[40%] bottom-0" />
       </Section>
     </Section>
   );

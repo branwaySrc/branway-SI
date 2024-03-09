@@ -38,12 +38,12 @@ export default function Home() {
       </Inner>
       <Section className="relative overflow-hidden">
         <Inner>
-          <Section className="border-[1px] border-t-transparent border-[#FFFFFF18] relative">
-            <Section className="border-r-[1px] border-[#FFFFFF18] absolute w-[50%] h-full bg-gradient-to-b from-[#000000] to-transparent" />
+          <Section className="border-[1px] border-t-transparent border-[#FFFFFF30] relative">
+            <Section className="border-r-[1px] border-[#FFFFFF30] absolute w-[50%] h-full bg-gradient-to-b from-[#000000] to-transparent" />
             <Section className="absolute w-[50%] h-full right-0 bg-gradient-to-b from-[#000000] to-transparent" />
             <Container className="mt-[200px]">
               <Box className="flex flex-col items-center gap-2">
-                <Box className="bg-[#FFFFFF18] h-10 w-[1px] bg-gradient-to-b from-blue-600" />
+                <Box className="bg-[#FFFFFF30] h-10 w-[1px] bg-gradient-to-b from-blue-600" />
                 <Container className="z-20 bg-blue-500 p-[0.5px] mt-[-100px] mb-10 rounded-full overflow-hidden">
                   <Box className="rounded-full overflow-hidden">
                     <Image
@@ -79,7 +79,7 @@ export default function Home() {
               </Box>
             </Container>
           </Section>
-          <Container className="flex flex-col pb-4 items-center px-4 relative border-[1px] border-[#FFFFFF18] border-t-transparent">
+          <Container className="flex flex-col pb-4 items-center px-4 relative border-[1px] border-[#FFFFFF30] border-t-transparent">
             <Box className="h-[100px] w-[2px] bg-gradient-to-t from-rose-500 mb-[-2px] mt-20" />
             <Box className="bg-rose-500 p-3 rounded-full" />
             <Box className="flex flex-col items-center mt-10 gap-2">
@@ -97,7 +97,7 @@ export default function Home() {
                 className="mb-[-150px]"
               />
             </Box>
-            <Figure className="relative overflow-hidden border-[1px] border-[#FFFFFF18] rounded-t-xl">
+            <Figure className="relative overflow-hidden border-[1px] border-[#FFFFFF30] rounded-t-xl">
               <Image
                 src={"/imweb_logo.jpg"}
                 alt="imweb image"
