@@ -13,6 +13,7 @@ import { SiKakaotalk } from "react-icons/si";
 import { Badge } from "@chakra-ui/react";
 import { EmailToast } from "@/components/acquire/emailToast";
 import { MdChevronRight } from "react-icons/md";
+import { KakaoPopover } from "@/components/acquire/kakaoPopover";
 
 const AcquirePage = () => {
   return (
@@ -67,7 +68,9 @@ const AcquirePage = () => {
               </Line>
             </Box>
             <Box className="mx-4 py-4 text-center border-[1px] border-[#FFFFFF30]">
-              카카오톡 상담하기 <MdChevronRight size={24} />
+              <KakaoPopover>
+                카카오톡 상담하기 <MdChevronRight size={24} />
+              </KakaoPopover>
             </Box>
             <div className="py-4" />
             <Box className="mx-4 py-4 border-[1px] border-[#FFFFFF30] rounded-tr-xl bg-[#FFFFFF30] flex relative">
