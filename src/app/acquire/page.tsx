@@ -37,7 +37,9 @@ export const AcquirePage = () => {
                 운영시간
                 <br />
               </span>
-              010-1234-5678
+              10:00 ~ 20:00
+              <br />
+              연중무휴
             </Text>
           </Box>
           <Container className="border-[1px] border-t-transparent border-[#FFFFFF30] w-full py-10 ">
