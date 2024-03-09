@@ -9,7 +9,6 @@ type TagAttributes<T> = Omit<HTMLAttributes<T>, "className"> & {
   };
 };
 
-
 export const Inner: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className, ...otherProps } = props;
   return (
@@ -95,6 +94,16 @@ export const Figure: React.FC<TagAttributes<HTMLDivElement>> = (props) => {
   return (
     <figure
       className={`${className} ${breakClass?.sm} ${breakClass?.lg}`}
+      {...otherProps}
+    />
+  );
+};
+
+export const Line: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
+  const { className, ...otherProps } = props;
+  return (
+    <div
+      className={`max-w-screen-xl min-w-screen-sm mx-auto text-slate-200 ${className}`}
       {...otherProps}
     />
   );

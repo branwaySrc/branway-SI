@@ -1,10 +1,9 @@
-"use client";
-
 import {
   Container,
   Box,
   Section,
   AbsoluteBg,
+  Line,
 } from "@/manager/lib/HTMLElements";
 import Image from "next/image";
 
@@ -44,8 +43,8 @@ export const HeroSectionLayout = (props: HeroSectionTm) => {
             </Box>
           </Container>
         </Section>
-        <Container className="absolute border-t-[1px] border-[#FFFFFF30] w-full h-[75%] bottom-0" />
-        <Container className="absolute border-t-[1px] border-[#FFFFFF30] w-full h-[40%] bottom-0" />
+        <Line className="absolute border-t-[1px] border-[#FFFFFF30] w-full h-[75%] bottom-0" />
+        <Line className="absolute border-t-[1px] border-[#FFFFFF30] w-full h-[40%] bottom-0" />
       </Section>
     </Section>
   );

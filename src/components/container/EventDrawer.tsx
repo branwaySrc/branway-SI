@@ -13,6 +13,7 @@ import { RefObject, useRef, useState, useEffect } from "react";
 import { AbsoluteBg, Box, Button } from "@/manager/lib/HTMLElements";
 import { IoArrowBackOutline } from "react-icons/io5";
 import { FaCaretRight } from "react-icons/fa";
+import { FiXCircle } from "react-icons/fi";
 
 export const EventDrawer = () => {
   const btnRef: RefObject<HTMLButtonElement> = useRef<HTMLButtonElement>(null);
@@ -27,10 +28,12 @@ export const EventDrawer = () => {
     <>
       <Box
         style={{ display: show === true ? "flex" : "none" }}
-        className="text-slate-300 font-bold mt-6 w-full h-[80px] fixed bottom-0 bg-[#00000050] border-t-[1px] border-green-900 items-center justify-between px-4 bg-clip-padding backdrop-filter backdrop-blur-lg z-50"
+        className={`text-slate-300 font-bold mt-6 w-full h-[80px] fixed bottom-0
+        bg-[#00000050] border-t-[1px] border-sky-800 items-center justify-between 
+        px-4 bg-clip-padding backdrop-filter backdrop-blur-lg z-50`}
       >
         <button ref={btnRef} onClick={onOpen} className="flex flex-col">
-          <p className="text-sm text-left text-green-500">
+          <p className="text-sm text-left text-sky-500">
             최소 30만원부터 ~ 10명의 고객분을 모십니다!
           </p>
           <p className="text-sm text-left flex items-center">
@@ -39,7 +42,7 @@ export const EventDrawer = () => {
           </p>
         </button>
         <button className="pr-2" onClick={() => setShow(false)}>
-          X
+          <FiXCircle size={26} />
         </button>
       </Box>
 
@@ -48,15 +51,14 @@ export const EventDrawer = () => {
         <DrawerContent className="relative">
           <DrawerHeader className="bg-stone-950 text-slate-200 z-10 flex justify-between">
             <p className="w-full text-center text-lg">
-              브랜웨이 포트폴리오 리스트
+              브랜웨이 2024 사이트 제작 이벤트
             </p>
           </DrawerHeader>
           <AbsoluteBg className="absolute top-0 w-full h-[150px] bg-gradient-to-b from-[#01201e50]" />
           <DrawerBody className="bg-neutral-950 text-slate-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            ipsam, sed quo deleniti commodi quas illum, earum nulla sint,
-            dolorum mollitia ad quam pariatur molestias tempore beatae voluptate
-            porro praesentium?
+            <h1 className="z-10 font-bold text-xl">
+              총 10명의 고객분을 모십니다.
+            </h1>
             <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
             ipsam, sed quo deleniti commodi quas illum, earum nulla sint,

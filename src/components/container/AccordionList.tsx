@@ -1,4 +1,3 @@
-import { Box } from "@/manager/lib/HTMLElements";
 import {
   Accordion,
   AccordionItem,
@@ -6,6 +5,7 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
+import { Box } from "@/manager/lib/HTMLElements";
 
 interface AccordionListUi {
   tabOne?: {

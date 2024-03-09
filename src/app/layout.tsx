@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { Inner } from "@/manager/lib/HTMLElements";
 import { NotoSans } from "@/manager/lib/@";
 import { ChakraProvider } from "@/manager/provider/chakraProvider";
+import { Footer } from "@/components/footer/Footer";
+
 import "./globals.css";
+import { EventDrawer } from "@/components/container/EventDrawer";
+import { Navigation } from "@/components/nav/Navigation";
 
 export const metadata: Metadata = {
   title: "브랜웨이",
@@ -16,8 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={NotoSans.className}>
-        <ChakraProvider >{children}</ChakraProvider>
+      <body className={`${NotoSans.className} bg-black`}>
+        <ChakraProvider>
+          <Navigation />
+
+          {children}
+          <Footer />
+          <>
+            <EventDrawer />
+          </>
+        </ChakraProvider>
       </body>
     </html>
   );

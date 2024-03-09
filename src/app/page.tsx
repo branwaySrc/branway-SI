@@ -8,8 +8,9 @@ import {
   Section,
   Figure,
   Button,
+  Line,
 } from "@custom-syntax/HTMLElements";
-import { Navigation } from "@/components/Navigation";
+import { Navigation } from "@/components/nav/Navigation";
 import { HeroSectionLayout } from "@/components/container/HeroSectionLayout";
 import { SquareBox } from "@/components/container/SquareBox";
 import { CONFIG } from "@/manager/statics/@";
@@ -26,7 +27,6 @@ import { EventDrawer } from "@/components/container/EventDrawer";
 export default function Home() {
   return (
     <main className="bg-[#050505] px-2">
-      <Navigation />
       <Inner>
         <Container>
           <HeroSectionLayout
@@ -36,10 +36,11 @@ export default function Home() {
           />
         </Container>
       </Inner>
+
       <Section className="relative overflow-hidden">
         <Inner>
-          <Section className="border-[1px] border-t-transparent border-[#FFFFFF30] relative">
-            <Section className="border-r-[1px] border-[#FFFFFF30] absolute w-[50%] h-full bg-gradient-to-b from-[#000000] to-transparent" />
+          <Line className="border-[1px] border-t-transparent border-[#FFFFFF30] relative">
+            <Line className="border-r-[1px] border-[#FFFFFF30] absolute w-[50%] h-full bg-gradient-to-b from-[#000000] to-transparent" />
             <Section className="absolute w-[50%] h-full right-0 bg-gradient-to-b from-[#000000] to-transparent" />
             <Container className="mt-[200px]">
               <Box className="flex flex-col items-center gap-2">
@@ -78,7 +79,8 @@ export default function Home() {
                 />
               </Box>
             </Container>
-          </Section>
+          </Line>
+
           <Container className="flex flex-col pb-4 items-center px-4 relative border-[1px] border-[#FFFFFF30] border-t-transparent">
             <Box className="h-[100px] w-[2px] bg-gradient-to-t from-rose-500 mb-[-2px] mt-20" />
             <Box className="bg-rose-500 p-3 rounded-full" />
@@ -124,6 +126,7 @@ export default function Home() {
               </Container>
             </Figure>
           </Container>
+
           <Box className="flex flex-col items-center mt-20 gap-2">
             <Image
               src={"/thumbup.png"}
@@ -138,6 +141,7 @@ export default function Home() {
               {CONFIG.IMWEB_VALID_REASONS_DESC}
             </Text>
           </Box>
+
           <Container className="px-6 mt-14">
             <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
               <FiCoffee size={24} />
@@ -152,6 +156,7 @@ export default function Home() {
               </Text>
             </Box>
           </Container>
+
           <Container className="px-6 mt-14">
             <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
               <FaReact size={24} />
@@ -166,6 +171,7 @@ export default function Home() {
               </Text>
             </Box>
           </Container>
+
           <Container className="px-6 mt-14">
             <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
               <MdOutlineCloudDone size={24} />
@@ -180,6 +186,7 @@ export default function Home() {
               </Text>
             </Box>
           </Container>
+
           <Container className="px-6 mt-14">
             <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
               <IoChatbubbleEllipsesOutline size={24} />
@@ -194,6 +201,7 @@ export default function Home() {
               </Text>
             </Box>
           </Container>
+
           <Container className="px-6 mt-14">
             <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
               <BsShop size={22} />
@@ -208,6 +216,7 @@ export default function Home() {
               </Text>
             </Box>
           </Container>
+
           <Container className="flex flex-col items-center px-4 relative">
             <Box className="h-[100px] w-[2px] bg-gradient-to-t from-green-500 mb-[-2px] mt-20" />
             <Box className="bg-green-500 p-3 rounded-full" />
@@ -253,6 +262,7 @@ export default function Home() {
               </Container>
             </Figure>
           </Container>
+
           <Box className="flex flex-col items-center mt-20 gap-3">
             <Title className="font-bold text-2xl">운영을 위해 해왔어요</Title>
             <Text className="text-slate-400 max-w-[80%] text-center leading-6">
@@ -279,6 +289,7 @@ export default function Home() {
               애셋을 제공해 드려요.
             </Text>
           </Box>
+
           <Container className="flex flex-col items-center py-10 bg-stone-950 border-[1px] border-neutral-900 rounded-3xl mx-4 mt-20">
             <Figure>
               <Image
@@ -301,6 +312,7 @@ export default function Home() {
               <DrawerPopUp />
             </>
           </Container>
+
           <Container className="flex flex-col items-center px-4 relative">
             <Box className="h-[100px] w-[2px] bg-gradient-to-t from-yellow-500 mb-[-2px] mt-20" />
             <Box className="bg-yellow-500 p-3 rounded-full" />
@@ -343,6 +355,7 @@ export default function Home() {
               </Container>
             </Figure>
           </Container>
+
           <Box className="flex flex-col items-center mt-20 gap-3">
             <Title className="font-bold text-2xl">운영을 위해 해왔어요</Title>
             <Text className="text-slate-400 max-w-[80%] text-center leading-6">
@@ -350,6 +363,7 @@ export default function Home() {
               가이드라인으로 전달해 드려요.
             </Text>
           </Box>
+
           <Container className="mt-20 flex justify-center">
             <Box className=" w-[95%]">
               <AccordionList
@@ -361,7 +375,6 @@ export default function Home() {
           </Container>
         </Inner>
       </Section>
-      <EventDrawer />
       <Container className="h-[200px]" />
     </main>
   );
