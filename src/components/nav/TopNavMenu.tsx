@@ -1,6 +1,13 @@
 "use client";
 
-import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Button,
+  Badge,
+} from "@chakra-ui/react";
 import { CgMenu } from "react-icons/cg";
 import Link from "next/link";
 
@@ -23,8 +30,35 @@ export const TopNavMenu = () => {
           </Link>
         </MenuItem>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link prefetch={false} href={"/imweb"}>
-            아임웹 제작 서비스
+          <Link
+            prefetch={false}
+            href={"/imweb"}
+            className="flex items-center gap-2"
+          >
+            <p>아임웹 제작 서비스</p>
+            <Badge variant="outline" colorScheme="green">
+              이벤트중
+            </Badge>
+          </Link>
+        </MenuItem>
+        <MenuItem bg={"#000000E8"} px={4} py={2}>
+          <Link
+            prefetch={false}
+            href={"/pricing"}
+            className="text-[#FFFFFF50] flex items-center gap-2"
+          >
+            <p>소개서 디자인 서비스</p>
+            <Badge variant="outline">출시예정</Badge>
+          </Link>
+        </MenuItem>
+        <MenuItem bg={"#000000E8"} px={4} py={2}>
+          <Link
+            prefetch={false}
+            href={"/pricing"}
+            className="text-[#FFFFFF50] flex items-center gap-2"
+          >
+            <p>자체 개발 서비스</p>
+            <Badge variant="outline">출시예정</Badge>
           </Link>
         </MenuItem>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
