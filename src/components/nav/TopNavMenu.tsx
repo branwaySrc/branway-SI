@@ -28,16 +28,24 @@ export const TopNavMenu = () => {
       </MenuButton>
       <MenuList bg={"#000000DC"} borderColor={"#FFFFFF50"}>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link href={"/"}>메인홈</Link>
+          <Link prefetch={false} href={"/"}>
+            메인홈
+          </Link>
         </MenuItem>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link href={"/"}>아임웹 제작 서비스</Link>
+          <Link prefetch={false} href={"/"}>
+            아임웹 제작 서비스
+          </Link>
         </MenuItem>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link href={"/"}>서비스 가격정책</Link>
+          <Link prefetch={false} href={"/"}>
+            서비스 가격정책
+          </Link>
         </MenuItem>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link href={"/acquire"}>문의하기</Link>
+          <Link prefetch={false} href={"/acquire"}>
+            문의하기
+          </Link>
         </MenuItem>
       </MenuList>
     </Menu>

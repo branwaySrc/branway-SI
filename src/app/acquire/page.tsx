@@ -7,8 +7,12 @@ import {
   Line,
   Container,
 } from "@/manager/lib/@";
+import { FaqList } from "@/components/acquire/faq";
 import { ImGooglePlus3 } from "react-icons/im";
 import { SiKakaotalk } from "react-icons/si";
+import { Badge } from "@chakra-ui/react";
+import { EmailToast } from "@/components/acquire/emailToast";
+import { MdChevronRight } from "react-icons/md";
 
 const AcquirePage = () => {
   return (
@@ -63,7 +67,7 @@ const AcquirePage = () => {
               </Line>
             </Box>
             <Box className="mx-4 py-4 text-center border-[1px] border-[#FFFFFF30]">
-              실시간 소통창구
+              카카오톡 상담하기 <MdChevronRight size={24} />
             </Box>
             <div className="py-4" />
             <Box className="mx-4 py-4 border-[1px] border-[#FFFFFF30] rounded-tr-xl bg-[#FFFFFF30] flex relative">
@@ -86,15 +90,52 @@ const AcquirePage = () => {
               </Line>
             </Box>
             <Box className="mx-4 py-4 text-center border-[1px] border-[#FFFFFF30]">
-              제안하기
+              <EmailToast>
+                이메일로 제안하기 <MdChevronRight size={24} />
+              </EmailToast>
             </Box>
           </Container>
         </Container>
         <Section>
           <Container className="border-[1px] border-[#FFFFFF30] border-t-transparent">
-            <Title className="py-10 text-center font-bold text-xl bg-neutral-950">
-              자주묻는 질문
-            </Title>
+            <Box className="py-4 bg-neutral-950 flex items-center justify-center gap-2">
+              <Title className="text-center font-bold text-lg mb-1">
+                자주묻는질문
+              </Title>
+              <Badge colorScheme="blue">FAQ</Badge>
+            </Box>
+          </Container>
+          <Container className="border-[1px] border-[#FFFFFF30] border-t-transparent">
+            <FaqList
+              tabOne={{
+                title: "브랜웨이와 실시간 전화 상담을 하고 싶어요.",
+                desc: "하세요 그럼",
+              }}
+              tabTwo={{
+                title: "온라인몰 운영 경험이 없어도 괜찮나요",
+                desc: "배우고 오세요",
+              }}
+              tabThree={{
+                title: "쇼핑몰 부가서비스 비용을 알고싶어요.",
+                desc: "아임웹에 직접 들어가세요.",
+              }}
+              tabFour={{
+                title: "제작 후, 발생되는 문제는 어떻게 해결하나요?",
+                desc: "아임웹에 직접 들어가세요.",
+              }}
+              tabFive={{
+                title: "평균 제작기간이 얼마나 걸리는지 알고싶어요.",
+                desc: "아임웹에 직접 들어가세요.",
+              }}
+              tabSix={{
+                title: "제작 비용정산은 어떻게 진행되는지 알고싶어요.",
+                desc: "아임웹에 직접 들어가세요.",
+              }}
+              tabSeven={{
+                title: "제작 비용산출에 대해 알고싶어요.",
+                desc: "아임웹에 직접 들어가세요.",
+              }}
+            />
           </Container>
         </Section>
       </Inner>
