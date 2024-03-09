@@ -7,7 +7,6 @@ import {
   AbsoluteBg,
 } from "@/manager/lib/HTMLElements";
 import Image from "next/image";
-import { BackgroundSpline } from "../BackgroundSpline";
 
 interface HeroSectionTm {
   badgeLabel?: string;
@@ -18,8 +17,13 @@ interface HeroSectionTm {
 
 export const HeroSectionLayout = (props: HeroSectionTm) => {
   return (
-    <Section className="border-[1px] border-[#FFFFFF18] bg-[#000000] relative overflow-hidden">
-      <BackgroundSpline />
+    <Section className="border-[1px] border-[#FFFFFF30] bg-[#000000] relative overflow-hidden">
+      <Image
+        src={"/bgs/neon_bg.jpg"}
+        fill
+        alt="background"
+        className="absolute opacity-70 top-0"
+      />
       <Section className="border-[1px] border-[#FFFFFF30] m-5 bg-[#00000050] relative bg-clip-padding backdrop-filter bg-opacity-80">
         <Section className="z-10 flex flex-col items-center border-[#FFFFFF30] h-[430px] border-[1px] m-7 bg-black bg-opacity-50">
           <Container className="mt-8">
