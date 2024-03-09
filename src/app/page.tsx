@@ -10,7 +10,6 @@ import {
   Button,
   Line,
 } from "@custom-syntax/HTMLElements";
-import { Navigation } from "@/components/nav/Navigation";
 import { HeroSectionLayout } from "@/components/container/HeroSectionLayout";
 import { SquareBox } from "@/components/container/SquareBox";
 import { CONFIG } from "@/manager/statics/@";
@@ -22,7 +21,6 @@ import { BsShop } from "react-icons/bs";
 import Image from "next/image";
 import { AccordionList } from "@/components/container/AccordionList";
 import { DrawerPopUp } from "@/components/container/DrawerPopUp";
-import { EventDrawer } from "@/components/container/EventDrawer";
 
 export default function Home() {
   return (

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inner } from "@/manager/lib/HTMLElements";
 import { NotoSans } from "@/manager/lib/@";
 import { ChakraProvider } from "@/manager/provider/chakraProvider";
 import { Footer } from "@/components/footer/Footer";

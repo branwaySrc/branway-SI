@@ -10,7 +10,7 @@ import {
 import { ImGooglePlus3 } from "react-icons/im";
 import { SiKakaotalk } from "react-icons/si";
 
-export const AcquirePage = () => {
+const AcquirePage = () => {
   return (
     <Section>
       <Inner className="px-2">
