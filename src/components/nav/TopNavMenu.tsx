@@ -1,16 +1,6 @@
 "use client";
 
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-  Button,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 import { CgMenu } from "react-icons/cg";
 import Link from "next/link";
 
@@ -33,12 +23,12 @@ export const TopNavMenu = () => {
           </Link>
         </MenuItem>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link prefetch={false} href={"/"}>
+          <Link prefetch={false} href={"/imweb"}>
             아임웹 제작 서비스
           </Link>
         </MenuItem>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link prefetch={false} href={"/"}>
+          <Link prefetch={false} href={"/pricing"}>
             서비스 가격정책
           </Link>
         </MenuItem>

@@ -7,6 +7,7 @@ import {
   Line,
   Container,
 } from "@/manager/lib/@";
+import Image from "next/image";
 import { FaqList } from "@/components/acquire/faq";
 import { ImGooglePlus3 } from "react-icons/im";
 import { SiKakaotalk } from "react-icons/si";
@@ -30,13 +31,15 @@ const AcquirePage = () => {
         <Container className="flex w-full ">
           <Box className="border-[1px] border-t-transparent border-r-transparent border-[#FFFFFF30] w-full py-10 pl-6">
             <Title className="font-bold text-2xl">
+              <Image
+                src={"/animation/talk.gif"}
+                alt="talk"
+                width={80}
+                height={50}
+              />
               브랜웨이
               <br /> 소통창구
             </Title>
-            <Text className="mt-4">
-              브랜웨이는 상시 봅니다. 고객문의 센터를 운영하고 있어요. <br />
-              문의하실 내용을 선택해주세요.
-            </Text>
             <Text className="mt-4">
               <span className="font-bold text-sky-500">
                 운영시간
