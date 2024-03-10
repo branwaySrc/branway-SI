@@ -4,7 +4,9 @@ import { ChakraProvider } from "@/manager/provider/chakraProvider";
 import { Footer } from "@/components/footer/Footer";
 
 import "./globals.css";
+
 import { EventDrawer } from "@/components/imweb/EventDrawer";
+
 import { Navigation } from "@/components/nav/Navigation";
 
 export const metadata: Metadata = {

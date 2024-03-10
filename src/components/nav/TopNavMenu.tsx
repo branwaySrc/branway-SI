@@ -13,8 +13,6 @@ import Link from "next/link";
 
 export const TopNavMenu = () => {
   return (
-
-    
     <Menu>
       <MenuButton
         bg={"transparent"}
@@ -53,11 +51,10 @@ export const TopNavMenu = () => {
             <Badge variant="outline">출시예정</Badge>
           </Link>
         </MenuItem>
-
         <MenuItem bg={"#000000E8"} px={4} py={2}>
           <Link
             prefetch={false}
-            href={"/"}
+            href={"/pricing"}
             className="text-[#FFFFFF50] flex items-center gap-2"
           >
             <p>자체 개발 서비스</p>

@@ -12,14 +12,5 @@ import {
 } from "@custom-syntax/HTMLElements";
 
 export default function Home() {
-  return (
-    <main className="bg-[#050505] px-2">
-      <Section>
-        <Inner>
-          
-        </Inner>
-      </Section>
-      <Container className="h-[200px]" />
-    </main>
-  );
+  return <main className="bg-[#050505] px-2"></main>;
 }
