@@ -59,7 +59,7 @@ export const WorkProcess = () => {
               <Box className="flex justify-start">
                 <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
                   원하는 레퍼런스 또는 전체 구성이 준비된게 없어서 대부분
-                  &quot;기획해주세요&quot;로 선택했는데 비용이 달라지나요?
+                  &quot;기획해주세요&quot; 로 선택했는데 비용이 달라지나요?
                 </Text>
               </Box>
               <Box className="flex justify-end">
@@ -72,7 +72,7 @@ export const WorkProcess = () => {
             <Box className="py-8 text-center font-light border-t-[1px] border-[#FFFFFF30] mt-10">
               <Text>
                 <span className="font-bold text-white">
-                  브랜웨이 소통창구를
+                  브랜웨이 소통창구를{" "}
                 </span>
                 통해 필요하신 서비스에 대해 설명해주세요.
               </Text>
