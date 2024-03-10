@@ -27,7 +27,7 @@ export const WorkProcess = () => {
           </Text>
           <div className="w-full h-[100%] bg-gradient-to-t via-[#0151ff10] from-[#011aff30] absolute bottom-0 " />
         </Box>
-        <Box className="border-y-[1px] border-[#FFFFFF30] bg-black flex flex-col items-center py-4 gap-2">
+        <Box className="border-y-[1px] border-[#FFFFFF30] flex flex-col items-center py-4 gap-2">
           <AiOutlineMessage size={30} />
           <Text className="text-center font-bold text-lg">사이트 작업절차</Text>
         </Box>
@@ -44,12 +44,12 @@ export const WorkProcess = () => {
             </Box>
             <Container className="flex flex-col gap-4 px-6 text-sm">
               <Box className="flex justify-start">
-                <Text className="max-w-[80%] border-2 bg-[#14141499] border-neutral-800 rounded-lg py-4 text-left px-4 text-white">
+                <Text className="max-w-[80%] border-2  bg-[#14141499] border-neutral-800 rounded-lg py-4 text-left px-4 text-white">
                   서비스 소개를 위한 브랜딩 사이트를 의뢰합니다.
                 </Text>
               </Box>
               <Box className="flex justify-end">
-                <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
+                <Text className="max-w-[75%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
                   구글 양식을 전달해 드릴게요! 원하시는 느낌 또는 레퍼런스를
                   양식을 토대로 전달해 주세요! -양식보기-
                 </Text>
@@ -61,7 +61,7 @@ export const WorkProcess = () => {
                 </Text>
               </Box>
               <Box className="flex justify-end">
-                <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
+                <Text className="max-w-[75%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
                   아닙니다! 비용은 동일하시지만, 때로는 원하시는 모습이 아닐 수
                   있어서 이부분은 인지해 주셔야됩니다.
                 </Text>
@@ -132,7 +132,7 @@ export const WorkProcess = () => {
               <div className="bg-gradient-to-t from-black w-full h-[250px] absolute bottom-0" />
             </Container>
             <Container className="bg-black border-b-[1px] border-[#FFFFFF30] py-10 px-4 flex flex-col gap-6">
-              <Text className="leading-8 text-white text-lg">
+              <Text className="leading-8 text-white text-lg px-2">
                 막막했던 브랜드 레퍼런스와 스토리를 사이트에 잘 녹여내어
                 주었습니다. 또한 작업 중, 유지 관리가 어려운 항목을 미리 안내 해
                 주어서 사전 예습을 할 수 있었습니다.

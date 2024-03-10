@@ -39,15 +39,15 @@ export default function Home() {
       <Section className="relative overflow-hidden">
         <Inner>
           <Line className="border-[1px] border-t-transparent border-[#FFFFFF30] relative">
-            <Line className="border-r-[1px] border-[#FFFFFF30] absolute w-[50%] h-full bg-gradient-to-b from-[#000000] to-transparent" />
+            <Line className="border-r-[1px] border-[#FFFFFF10] absolute w-[50%] h-full bg-gradient-to-b from-[#000000] to-transparent" />
             <Section className="absolute w-[50%] h-full right-0 bg-gradient-to-b from-[#000000] to-transparent" />
             <Container
               breakClass={{
                 lg: "lg:flex lg:flex-row",
               }}
-              className="z-50 border-b-[1px] border-[#FFFFFF30] flex flex-col items-center justify-center text-center"
+              className="z-50 flex flex-col text-center"
             >
-              <Box className="w-full text-neutral-400 z-50 bg-black">
+              <Box className="w-full text-neutral-400 z-50 h-full flex flex-col">
                 <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
                   <p className="max-w-[70%] text-center">
                     한달정도 예상한 사이트를{" "}
@@ -65,7 +65,7 @@ export default function Home() {
                   <p>리얼프레시푸드 - &ldquo;명품시계샵&ldquo;</p>
                 </div>
                 <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
-                  <p className="max-w-[70%] text-center">
+                  <p className="max-w-[70%] text-center ">
                     구글/네이버 노출까지{" "}
                     <span className="text-white">
                       모두 한번에 해결해 주었어요.
@@ -74,7 +74,7 @@ export default function Home() {
                   <p>메타럭스 - &ldquo;명품시계샵&ldquo;</p>
                 </div>
               </Box>
-              <Box className="w-full text-neutral-400 z-50 bg-black">
+              <Box className="w-full text-neutral-400 z-50 flex flex-col">
                 <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
                   <p className="max-w-[70%] text-center">
                     구글/네이버 노출까지{" "}
@@ -93,7 +93,7 @@ export default function Home() {
                   </p>
                   <p>메타마케팅 - &ldquo;명품시계샵&ldquo;</p>
                 </div>
-                <div className="flex flex-col justify-center items-center py-10 gap-2">
+                <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
                   <p className="max-w-[70%] text-center">
                     <span className="text-white">
                       부담없는 가격에, 원하는 사이트를{" "}
