@@ -105,7 +105,7 @@ export const WorkProcess = () => {
               </Box>
               <Box className="flex justify-start">
                 <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
-                  저는 레퍼런스 2번을 선택하겠습니다 :)
+                  저는 레퍼런스 2번을 선택하겠습니다
                 </Text>
               </Box>
             </Container>
