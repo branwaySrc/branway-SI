@@ -376,7 +376,9 @@ export default function Home() {
                 <DrawerPopUp />
               </>
             </Container>
-            <WorkProcess />
+            <>
+              <WorkProcess />
+            </>
             <Container className="flex flex-col items-center px-4 relative">
               <Box className="h-[100px] w-[2px] bg-gradient-to-t from-yellow-500 mb-[-2px] mt-20" />
               <Box className="bg-yellow-500 p-3 rounded-full" />

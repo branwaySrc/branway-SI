@@ -132,7 +132,7 @@ export const WorkProcess = () => {
                 <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
                   저희가 총 기간과 예상 스케줄을 www.google.com 공유 시트를 통해
                   전달 드릴 예정이에요! 참고 부탁드리며, 1차까지 완료 되는데로
-                  바로 연락을 드리겠습니다 :)
+                  바로 연락을 드리겠습니다
                 </Text>
               </Box>
               <div className="bg-gradient-to-t from-black w-full h-[250px] absolute bottom-0" />
