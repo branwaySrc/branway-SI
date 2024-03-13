@@ -45,35 +45,44 @@ export const WorkProcess = () => {
             <Container className="flex flex-col gap-4 px-6 text-sm">
               <Box className="flex justify-start">
                 <Text className="max-w-[80%] border-2  bg-[#14141499] border-neutral-800 rounded-lg py-4 text-left px-4 text-white">
-                  서비스 소개를 위한 브랜딩 사이트를 의뢰합니다.
+                  서비스 소개를 위한
+                  <span className="bg-blue-900"> 브랜딩 사이트를 </span>
+                  의뢰합니다.
                 </Text>
               </Box>
               <Box className="flex justify-end">
                 <Text className="max-w-[75%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
-                  구글 양식을 전달해 드릴게요! 원하시는 느낌 또는 레퍼런스를
-                  양식을 토대로 전달해 주세요! -양식보기-
+                  <span className="bg-green-900"> 구글 양식을 </span>
+                  전달해 드릴게요! 원하시는 느낌 또는 레퍼런스를 양식을 토대로
+                  전달해 주세요! -양식보기-
                 </Text>
               </Box>
               <Box className="flex justify-start">
                 <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
-                  원하는 레퍼런스 또는 전체 구성이 준비된게 없어서 대부분
+                  원하는 레퍼런스 또는 전체 구성이
+                  <span className="bg-blue-900"> 준비된게 없어서 </span> 대부분
                   &quot;기획해주세요&quot; 로 선택했는데 비용이 달라지나요?
                 </Text>
               </Box>
               <Box className="flex justify-end">
                 <Text className="max-w-[75%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
-                  아닙니다! 비용은 동일하시지만, 때로는 원하시는 모습이 아닐 수
-                  있어서 이부분은 인지해 주셔야됩니다.
+                  <span className="bg-green-900">
+                    {" "}
+                    아닙니다! 비용은 동일합니다!{" "}
+                  </span>{" "}
+                  단, 원하시는 모습이 아닐 수 있어서 이 부분은 인지해
+                  주셔야됩니다.
                 </Text>
               </Box>
             </Container>
             <Box className="py-8 text-center font-light border-t-[1px] border-[#FFFFFF30] mt-10">
               <Text className="px-2">
                 <span className="font-bold text-white">
-                  브랜웨이 소통창구를
+                  양식을 토대로 기획을 제안드립니다.
                 </span>
-                통해 필요하신 서비스에 대해 설명해주세요. 기획이 없으시더라도
-                어떠한 추가적인 비용이 요구되지 않습니다.
+                <br />
+                또한, 미리 디자인 느낌을 경험하실 수 있도록 레퍼런스 사이트를
+                제공해 드립니다.
               </Text>
             </Box>
             <Container className="flex flex-col gap-4 px-6 text-sm">
@@ -108,10 +117,10 @@ export const WorkProcess = () => {
             <Box className="py-8 text-center font-light border-t-[1px] border-[#FFFFFF30] mt-10">
               <Text className="px-2">
                 <span className="font-bold text-white">
-                  브랜웨이 소통창구를
+                  온라인 계약서를 전달드립니다.
                 </span>
-                통해 필요하신 서비스에 대해 설명해주세요. 기획이 없으시더라도
-                어떠한 추가적인 비용이 요구되지 않습니다.
+                <br />
+                제공된 기획 레퍼런스의 결과물을 토대로 제작 확정을 진행합니다.
               </Text>
             </Box>
             <Container className="flex flex-col gap-4 border-b-[1px] border-[#FFFFFF30] pb-10 relative text-sm">

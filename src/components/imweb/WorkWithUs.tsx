@@ -113,7 +113,7 @@ export const WorkWithUsImageAsset = () => {
           <Box className="mt-4">
             <Text className="text-neutral-300 leading-6 flex flex-col gap-2">
               <span className="font-bold">
-                <span className="bg-yellow-800">모든 애셋의 원본을 </span>
+                <span className="bg-amber-600">모든 애셋의 원본을 </span>
                 제공해드립니다.
               </span>
               <span className="text-neutral-400">
