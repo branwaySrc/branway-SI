@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
                   <p className="max-w-[70%] text-center">
-                    원하는 느낌의 사이트를{" "}
+                    원하시는 느낌의 사이트를{" "}
                     <span className="text-white">
                       다른 업체보다 90% 빨랐어요.
                     </span>

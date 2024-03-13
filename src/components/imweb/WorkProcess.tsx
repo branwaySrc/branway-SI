@@ -16,7 +16,7 @@ export const WorkProcess = () => {
       <Container>
         <Box className="flex flex-col items-center gap-4 border-y-[1px] border-[#FFFFFF30] relative py-20 my-10 ">
           <Text className="text-slate-400 flex items-center gap-2 z-10">
-            <FaKey size={18} /> 브랜웨이의 철칙
+            <FaKey size={18} /> 브랜웨이의 스타일
           </Text>
           <Title className="font-bold text-white text-2xl z-10">
             빠른 소통, 그리고 명확한 결과물
