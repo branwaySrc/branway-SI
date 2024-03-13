@@ -18,10 +18,17 @@ import { FaReact } from "react-icons/fa6";
 import { MdOutlineCloudDone } from "react-icons/md";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { BsShop } from "react-icons/bs";
-import Image from "next/image";
 import { AccordionList } from "@/components/imweb/AccordionList";
 import { DrawerPopUp } from "@/components/imweb/DrawerPopUp";
 import { WorkProcess } from "@/components/imweb/WorkProcess";
+import { Badge, Stack } from "@chakra-ui/react";
+
+import Image from "next/image";
+import {
+  WorkWithUsDesign,
+  WorkWithUsImageAsset,
+  WorkWithUsReduceCost,
+} from "@/components/imweb/WorkWithUs";
 
 export default function Home() {
   return (
@@ -287,71 +294,42 @@ export default function Home() {
                 <Title className="font-bold text-2xl">
                   브랜웨이 X 아임웹의 장점
                 </Title>
-                <Text className="text-slate-400 mb-10">
+                <Text className="text-slate-400">
                   고객님께서 필요하신 것들을 아낌없이 드려요.
                 </Text>
-                <Image
-                  src={"/branwayUp.png"}
-                  alt="happy women image"
-                  width={240}
-                  height={240}
-                  className="mb-[-150px]"
-                />
               </Box>
-              <Figure className="relative rounded-2xl overflow-hidden border-[1px] border-zinc-900">
-                <Image
-                  src={"/imweb_logo.jpg"}
-                  alt="imweb image"
-                  height={500}
-                  width={500}
-                  style={{
-                    objectFit: "cover",
-                  }}
-                />
-                <Box className="flex gap-3 absolute top-0 m-6">
-                  <Box className="bg-rose-500 p-1 rounded-full"></Box>
-                  <Box className="bg-green-500 p-1 rounded-full"></Box>
-                  <Box className="bg-yellow-500 p-1 rounded-full"></Box>
-                </Box>
-                <Container className="absolute top-0 right-4 mt-4">
-                  <Box
-                    breakClass={{ lg: "lg:w-[380px]", sm: "sm:w-[320px]" }}
-                    className="border-2 border-zinc-950 bg-[#FFFFFF05] h-9 w-[250px] rounded-md flex items-center"
-                  >
-                    <Text className="text-sm text-slate-300 mb-1 px-4">
-                      imweb.me
-                    </Text>
-                  </Box>
-                </Container>
-              </Figure>
             </Container>
-
-            <Box className="flex flex-col items-center mt-20 gap-3">
-              <Title className="font-bold text-2xl">운영을 위해 해왔어요</Title>
-              <Text className="text-slate-400 max-w-[80%] text-center leading-6">
-                수 년간 고객님들과 소통을 하면서 어려워 하시는 내용들을
-                가이드라인으로 전달해 드려요.
-              </Text>
+            <Box className="flex justify-center mt-5">
+              <Box className="border-[1px] border-[#FFFFFF30] p-2 rounded-lg bg-black">
+                <Stack direction="row">
+                  <Badge colorScheme="blue" className="opacity-[80%]">
+                    아이디어
+                  </Badge>
+                  <Badge colorScheme="green" className="opacity-[80%]">
+                    디자인
+                  </Badge>
+                  <Badge
+                    colorScheme="yellow"
+                    opacity={10}
+                    className="opacity-[80%]"
+                  >
+                    애셋
+                  </Badge>
+                  <Badge
+                    colorScheme="purple"
+                    opacity={10}
+                    className="opacity-[80%]"
+                  >
+                    이벤트
+                  </Badge>
+                </Stack>
+              </Box>
             </Box>
-            <Box className="flex flex-col items-center mt-20 gap-3">
-              <Title className="font-bold text-2xl">
-                가장 빠르고, 저렴할거에요
-              </Title>
-              <Text className="text-slate-400 max-w-[80%] text-center leading-6">
-                1주일 내로 모든 사이트 작업과 오픈을 진행해 드려요.
-              </Text>
-            </Box>
-            <Box className="flex flex-col items-center mt-20 gap-3">
-              <Title className="font-bold text-2xl">
-                모든 애셋은 유료를 사용해요
-              </Title>
-              <Text className="text-slate-400 max-w-[80%] text-center leading-6">
-                절대 무료 이미지/동영상을 사용하지 않아요.
-                <br />
-                저작권은 걱정하시지 않아도 되요. 그리고 요청에 따라, 다양한
-                디자인 애셋을 제공해 드려요.
-              </Text>
-            </Box>
+            <Container className="flex flex-col items-center gap-4">
+              <WorkWithUsDesign />
+              <WorkWithUsReduceCost />
+              <WorkWithUsImageAsset />
+            </Container>
 
             <Container className="flex flex-col items-center py-10 bg-stone-950 border-[1px] border-neutral-900 rounded-3xl mx-4 mt-20">
               <Figure>
