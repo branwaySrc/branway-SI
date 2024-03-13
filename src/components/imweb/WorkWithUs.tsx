@@ -3,6 +3,7 @@ import { FaRegMessage } from "react-icons/fa6";
 import { MdOutlineImagesearchRoller } from "react-icons/md";
 import { SiAdobeillustrator } from "react-icons/si";
 import { FaArrowDown91 } from "react-icons/fa6";
+import { SiAdobephotoshop } from "react-icons/si";
 
 export const WorkWithUsDesign = () => {
   return (
@@ -13,9 +14,11 @@ export const WorkWithUsDesign = () => {
             <FaRegMessage size={20} color="#FFFFFF99" />
           </Box>
           <Box className="mt-4">
-            <Text>
-              <span className="bg-blue-800">사업의 브랜딩을</span> 바로잡습니다.
-              <br />
+            <Text className="flex flex-col gap-2">
+              <span className="font-bold">
+                <span className="bg-blue-800">사업의 브랜딩을</span>{" "}
+                바로잡습니다.
+              </span>
               <span className="text-neutral-400">
                 고객님과 함께 진행하는 온라인 미팅에서 필요한 포인트를 짚어
                 브랜드만이 가질 수 있는 스토리를 완성시킵니다.
@@ -48,10 +51,11 @@ export const WorkWithUsReduceCost = () => {
             <FaArrowDown91 size={20} color="#FFFFFF99" />
           </Box>
           <Box className="mt-4">
-            <Text className="text-neutral-300 leading-6">
-              <span className="bg-green-900"> 점진적인 개발 방향성을 </span>{" "}
-              제시해 드립니다.
-              <br />
+            <Text className="text-neutral-300 leading-6 flex flex-col gap-2">
+              <span className="font-bold">
+                <span className="bg-green-900"> 점진적인 개발 방향성을 </span>{" "}
+                제시해 드립니다.
+              </span>
               <span className="text-neutral-400">
                 대부분의 파트너분들께선, 이전 사이트에 다양한 기능을 구현했어도
                 활용율이 매우 저조했습니다. 숙련도에 따라 운영 레퍼런스를 전달해
@@ -107,12 +111,11 @@ export const WorkWithUsImageAsset = () => {
             <MdOutlineImagesearchRoller size={20} color="#FFFFFF99" />
           </Box>
           <Box className="mt-4">
-            <Text className="text-neutral-300 leading-6">
-              <span className="bg-yellow-800">
-                디자인에 활용된 모든 애셋의{" "}
+            <Text className="text-neutral-300 leading-6 flex flex-col gap-2">
+              <span className="font-bold">
+                <span className="bg-yellow-800">모든 애셋의 원본을 </span>
+                제공해드립니다.
               </span>
-              원본을 제공해드립니다.
-              <br />
               <span className="text-neutral-400">
                 추가비용 없이 모든 애셋은 작업 완료 후, 전달드립니다. 요구에
                 따라 배경이미지 및 대체할 수 있는 이미지 또한 함께 제공하고
@@ -122,25 +125,44 @@ export const WorkWithUsImageAsset = () => {
           </Box>
         </Container>
         <Container className="relative px-1 py-1">
-          <Box className="border-[1px] relative rounded-2xl border-[#f2ff4250] flex items-center justify-center bg-[#ffc82f10]">
-            <Box className="inline-block border-[1px] border-[#FFFFFF10] p-2 rounded-[34px]">
-              <SiAdobeillustrator
-                size={90}
-                color="#DB6300"
-                className="opacity-20 blur-md absolute z-10"
-              />
-              <SiAdobeillustrator
-                size={60}
-                color="#CCDB00"
-                className="opacity-20 blur-md absolute z-10"
-              />
-              <SiAdobeillustrator
-                size={80}
-                color="#FFFFFF"
-                className="z-20 border-2 rounded-3xl p-1 border-[#dbc33bb6]"
-              />
+          <Box className="border-[1px] relative rounded-2xl border-[#f2ff4250] flex items-center justify-center bg-gradient-to-r via-[#c2833142] from-[#f2ff4250]">
+            <Box className="border-[1px] border-[#FFFFFF10] p-2 rounded-[34px] flex gap-2">
+              <Box className="relative z-10">
+                <SiAdobeillustrator
+                  size={90}
+                  color="#DB6300"
+                  className="opacity-20 blur-md absolute z-10"
+                />
+                <SiAdobeillustrator
+                  size={60}
+                  color="#CCDB00"
+                  className="opacity-20 blur-md absolute z-10"
+                />
+                <SiAdobeillustrator
+                  size={80}
+                  color="#FFFFFF"
+                  className="z-20 border-2 rounded-3xl p-1 border-[#dbc33bb6]"
+                />
+              </Box>
+              <Box className="relative z-10">
+                <SiAdobephotoshop
+                  size={90}
+                  color="#B3DB00"
+                  className="opacity-20 blur-md absolute z-10 right-5"
+                />
+                <SiAdobephotoshop
+                  size={60}
+                  color="#CCDB00"
+                  className="opacity-20 blur-md absolute z-10"
+                />
+                <SiAdobephotoshop
+                  size={80}
+                  color="#FFFFFF"
+                  className="z-20 border-2 rounded-3xl p-1 border-[#dbc33bb6]"
+                />
+              </Box>
             </Box>
-            <div className="absolute top-8 opacity-50 text-[#b4600030] text-[40px] font-bold">
+            <div className="absolute top-4 opacity-50 text-[#b4600030] text-[56px] font-bold">
               PREMIUM
             </div>
             <div className="h-[200px]"></div>
