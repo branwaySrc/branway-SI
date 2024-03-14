@@ -65,7 +65,7 @@ export const WorkProcess = () => {
                 </Text>
               </Box>
               <Box className="flex justify-end">
-                <Text className="max-w-[75%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
+                <Text className="max-w-[75%] border-2 shrink bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
                   <span className="bg-green-900">
                     {" "}
                     아닙니다! 비용은 동일합니다!{" "}
@@ -146,9 +146,11 @@ export const WorkProcess = () => {
                 주었습니다. 또한 작업 중, 유지 관리가 어려운 항목을 미리 안내 해
                 주어서 사전 예습을 할 수 있었습니다.
               </Text>
-              <Text className="text-end w-full">
-                압구정로데오 명품시계샵 타임블루
-              </Text>
+              <Box className="flex justify-end">
+                <Text className="px-3 py-1 rounded-full text-sm border-[1px] border-[#FFFFFF30] text-neutral-200">
+                  압구정로데오 명품시계샵
+                </Text>
+              </Box>
             </Container>
           </Section>
         </Container>

@@ -25,59 +25,46 @@ interface AccordionListUi {
 export const AccordionList = (props: AccordionListUi) => {
   const { tabOne, tabTwo, tabThree } = props;
   return (
-    <Accordion defaultIndex={[0]} allowMultiple className="border-slate-900">
+    <Accordion allowMultiple className="border-[#FFFFFF30]">
       <AccordionItem>
         <h2>
           <AccordionButton
-            _expanded={{ bg: "#0E0F1480", color: "white" }}
+            _expanded={{ bg: "#000000", color: "white" }}
             pb={4}
             pt={4}
           >
-            <Box className="font-bold">
-              {(tabOne && tabOne.title) || "꼭 필요한 정보"}
-            </Box>
+            <Box className="font-bold"></Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
-        <AccordionPanel pt={8} pb={8}>
-          {(tabOne && tabOne.desc) || "Lorem sapsi diaiof osfisnf"}
-        </AccordionPanel>
+        <AccordionPanel pt={8} pb={8}></AccordionPanel>
       </AccordionItem>
 
       <AccordionItem>
         <h2>
           <AccordionButton
-            _expanded={{ bg: "#0E0F1480", color: "white" }}
+            _expanded={{ bg: "#000000", color: "white" }}
             pb={4}
             pt={4}
           >
-            <Box className="font-bold">
-              {" "}
-              {(tabTwo && tabTwo.title) || "레퍼런스 정보"}
-            </Box>
+            <Box className="font-bold"></Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
-        <AccordionPanel pt={8} pb={8}>
-          {(tabTwo && tabTwo.desc) || "Lorem sapsi diaiof osfisnf"}
-        </AccordionPanel>
+        <AccordionPanel pt={8} pb={8}></AccordionPanel>
       </AccordionItem>
       <AccordionItem>
         <h2>
           <AccordionButton
-            _expanded={{ bg: "#0E0F1480", color: "white" }}
+            _expanded={{ bg: "#000000", color: "white" }}
             pb={4}
             pt={4}
           >
-            <Box className="font-bold">
-              {(tabThree && tabThree.title) || "그 외, 아셔야 할 내용"}
-            </Box>
+            <Box className="font-bold"></Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
-        <AccordionPanel pt={8} pb={8}>
-          {(tabThree && tabThree.desc) || "Lorem sapsi diaiof osfisnf"}
-        </AccordionPanel>
+        <AccordionPanel pt={8} pb={8}></AccordionPanel>
       </AccordionItem>
     </Accordion>
   );

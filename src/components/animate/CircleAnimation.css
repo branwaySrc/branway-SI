@@ -1,0 +1,20 @@
+.circle-container {
+  perspective: 10000px; /* 원근법 효과를 위해 perspective 설정 */
+}
+
+.circle {
+  border-radius: 50%;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 부모 요소 중앙에 위치 */
+  animation: rotate 6s linear infinite; /* 회전 애니메이션 */
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); /* 0도 회전 */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); /* 360도 회전 */
+  }
+}

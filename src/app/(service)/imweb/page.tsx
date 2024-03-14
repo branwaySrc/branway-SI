@@ -29,6 +29,9 @@ import {
   WorkWithUsImageAsset,
   WorkWithUsReduceCost,
 } from "@/components/imweb/WorkWithUs";
+import ToggleBtnShiftSheet from "@/components/imweb/ToggleBtnShiftSheet/ToggleBtnShiftSheet";
+import Testimonial from "@/components/imweb/Testimonial";
+import WhatToMake from "@/components/imweb/WhatToMake";
 
 export default function Home() {
   return (
@@ -47,171 +50,18 @@ export default function Home() {
         <Inner>
           <Line className="border-[1px] border-t-transparent border-[#FFFFFF30] relative">
             <Line className="border-r-[1px] border-[#FFFFFF10] absolute w-[50%] h-full bg-gradient-to-b from-[#000000] to-transparent" />
-            <Section className="absolute w-[50%] h-full right-0 bg-gradient-to-b from-[#000000] to-transparent" />
-            <Container
-              breakClass={{
-                lg: "lg:flex lg:flex-row",
-              }}
-              className="z-50 flex flex-col text-center"
-            >
-              <Box className="w-full text-neutral-400 z-50 h-full flex flex-col">
-                <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
-                  <p className="max-w-[70%] text-center">
-                    한달정도 예상한 사이트를{" "}
-                    <span className="text-white">1주일 이내로 만들었어요.</span>
-                  </p>
-                  <p>TIMEBLUE - &ldquo;명품시계샵&ldquo;</p>
-                </div>
-                <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
-                  <p className="max-w-[70%] text-center">
-                    원하시는 느낌의 사이트를{" "}
-                    <span className="text-white">
-                      다른 업체보다 90% 빨랐어요.
-                    </span>
-                  </p>
-                  <p>리얼프레시푸드 - &ldquo;명품시계샵&ldquo;</p>
-                </div>
-                <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
-                  <p className="max-w-[70%] text-center ">
-                    구글/네이버 노출까지{" "}
-                    <span className="text-white">
-                      모두 한번에 해결해 주었어요.
-                    </span>
-                  </p>
-                  <p>메타럭스 - &ldquo;명품시계샵&ldquo;</p>
-                </div>
-              </Box>
-              <Box className="w-full text-neutral-400 z-50 flex flex-col">
-                <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
-                  <p className="max-w-[70%] text-center">
-                    구글/네이버 노출까지{" "}
-                    <span className="text-white">
-                      모두 한번에 해결해 주었어요.
-                    </span>
-                  </p>
-                  <p>메타럭스 - &ldquo;명품시계샵&ldquo;</p>
-                </div>
-                <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
-                  <p className="max-w-[70%] text-center">
-                    제공한 애셋만으로 충분히{" "}
-                    <span className="text-white">
-                      서비스 아이덴티티를 만들어 주었어요.
-                    </span>
-                  </p>
-                  <p>메타마케팅 - &ldquo;명품시계샵&ldquo;</p>
-                </div>
-                <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
-                  <p className="max-w-[70%] text-center">
-                    <span className="text-white">
-                      부담없는 가격에, 원하는 사이트를{" "}
-                    </span>
-                    만들어서 빠른런칭을 할 수 있었어요.
-                  </p>
-                  <p>알워치 - &ldquo;명품시계샵&ldquo;</p>
-                </div>
-              </Box>
-            </Container>
-            <Container className="mt-[200px]">
-              <Box className="flex flex-col items-center gap-2">
-                <Box className="bg-[#FFFFFF30] h-10 w-[1px] bg-gradient-to-b from-blue-600" />
-                <Container className="z-20 bg-blue-500 p-[0.5px] mt-[-100px] mb-10 rounded-full overflow-hidden">
-                  <Box className="rounded-full overflow-hidden">
-                    <Image
-                      src={"/imweb_name_Logo.jpg"}
-                      alt="imweb_logo"
-                      height={55}
-                      width={55}
-                    />
-                  </Box>
-                </Container>
-                <Title className="font-bold text-2xl z-10">
-                  {CONFIG.IMWEB_VALID_SECTION_TITLE}
-                </Title>
-                <Text className="text-slate-400 z-10">
-                  {CONFIG.IMWEB_VALID_SECTION_DESC}
-                </Text>
-              </Box>
-              <Box className="flex mt-10 z-10 justify-center">
-                <SquareBox
-                  className="border-r-[1px]"
-                  title={CONFIG.IMWEB_VALID_SERVICES[0].title}
-                  desc={CONFIG.IMWEB_VALID_SERVICES[0].desc}
-                />
-                <SquareBox
-                  className="border-r-[1px]"
-                  title={CONFIG.IMWEB_VALID_SERVICES[1].title}
-                  desc={CONFIG.IMWEB_VALID_SERVICES[1].desc}
-                />
-                <SquareBox
-                  title={CONFIG.IMWEB_VALID_SERVICES[2].title}
-                  desc={CONFIG.IMWEB_VALID_SERVICES[2].desc}
-                />
-              </Box>
-            </Container>
+            <Testimonial />
+            <WhatToMake />
           </Line>
 
           <Container className="flex flex-col pb-4 items-center px-4 relative border-[1px] border-[#FFFFFF30] border-t-transparent">
-            <Box className="h-[100px] w-[2px] bg-gradient-to-t from-rose-500 mb-[-2px] mt-20" />
-            <Box className="bg-rose-500 p-3 rounded-full" />
-            <Box className="flex flex-col items-center mt-10 gap-2">
-              <Title className="font-bold text-2xl">
-                {CONFIG.IMWEB_VALID_SECTION_TITLE}
-              </Title>
-              <Text className="text-slate-400 mb-8">
-                {CONFIG.IMWEB_VALID_SECTION_DESC}
-              </Text>
-              <Image
-                src={"/branwayTell.png"}
-                alt="curious face image"
-                width={124}
-                height={180}
-                className="mb-[-150px]"
-              />
-            </Box>
-            <Figure className="relative overflow-hidden border-[1px] border-[#FFFFFF30] rounded-t-xl">
-              <Image
-                src={"/imweb_logo.jpg"}
-                alt="imweb image"
-                height={500}
-                width={500}
-                style={{
-                  objectFit: "cover",
-                }}
-              />
-              <Box className="flex gap-3 absolute top-0 m-6">
-                <Box className="bg-rose-500 p-1 rounded-full"></Box>
-                <Box className="bg-green-500 p-1 rounded-full"></Box>
-                <Box className="bg-yellow-500 p-1 rounded-full"></Box>
-              </Box>
-              <Container className="absolute top-0 right-4 mt-4">
-                <Box
-                  breakClass={{ lg: "lg:w-[380px]", sm: "sm:w-[320px]" }}
-                  className="border-2 border-zinc-950 bg-[#FFFFFF05] h-9 w-[250px] rounded-md flex items-center"
-                >
-                  <Text className="text-sm text-slate-300 mb-1 px-4">
-                    imweb.me
-                  </Text>
-                </Box>
-              </Container>
-            </Figure>
+            아임웹이 가능한 영역 설명
           </Container>
 
           <Line className="border-[1px] border-y-transparent border-[#FFFFFF30]">
-            <Box className="flex flex-col items-center mt-20 gap-2">
-              <Image
-                src={"/thumbup.png"}
-                alt="thumbUp"
-                width={120}
-                height={120}
-              />
-              <Title className="font-bold text-2xl mt-4">
-                {CONFIG.IMWEB_VALID_REASONS_TITLE}
-              </Title>
-              <Text className="text-slate-400">
-                {CONFIG.IMWEB_VALID_REASONS_DESC}
-              </Text>
-            </Box>
-
+            <div>
+              <ToggleBtnShiftSheet />
+            </div>
             <Container className="px-6 mt-14">
               <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
                 <FiCoffee size={24} />
@@ -409,12 +259,8 @@ export default function Home() {
             </Box>
 
             <Container className="mt-20 flex justify-center">
-              <Box className=" w-[95%]">
-                <AccordionList
-                  tabOne={{ title: "", desc: "" }}
-                  tabTwo={{ title: "", desc: "" }}
-                  tabThree={{ title: "", desc: "" }}
-                />
+              <Box className="w-full">
+                <AccordionList />
               </Box>
             </Container>
             <Container className="h-[200px]" />
