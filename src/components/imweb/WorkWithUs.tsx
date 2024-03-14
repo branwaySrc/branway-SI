@@ -16,8 +16,8 @@ export const WorkWithUsDesign = () => {
           <Box className="mt-4">
             <Text className="flex flex-col gap-2">
               <span className="font-bold">
-                <span className="bg-blue-800">사업의 브랜딩을</span>{" "}
-                바로잡습니다.
+                <span className="bg-blue-800">사업의 브랜딩을</span> 바로
+                잡아드립니다.
               </span>
               <span className="text-neutral-400">
                 고객님과 함께 진행하는 온라인 미팅에서 필요한 포인트를 짚어
