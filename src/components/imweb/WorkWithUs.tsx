@@ -72,7 +72,7 @@ export const WorkWithUsReduceCost = () => {
             <div className="w-[80px] h-[80px] flex text-center justify-center items-center border-2 flex-wrap px-4 text-sm text-neutral-300 rounded-lg border-green-500">
               쿠폰 관리
             </div>
-            <div className="w-[80px] h-[80px] flex text-center justify-center items-center border-[1px] flex-wrap px-2 text-sm text-neutral-500 rounded-lg border-[#FFFFFF18]">
+            <div className="w-[80px] h-[80px] flex text-center justify-center items-center border-[1px] flex-wrap px-4 text-sm text-neutral-500 rounded-lg border-[#FFFFFF18]">
               게시판 관리
             </div>
             <div className="w-[80px] h-[80px] flex text-center justify-center items-center border-[1px] flex-wrap text-sm text-neutral-500 rounded-lg border-[#FFFFFF18] px-2">

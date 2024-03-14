@@ -22,6 +22,7 @@ import { AccordionList } from "@/components/imweb/AccordionList";
 import { DrawerPopUp } from "@/components/imweb/DrawerPopUp";
 import { WorkProcess } from "@/components/imweb/WorkProcess";
 import { Badge, Stack } from "@chakra-ui/react";
+import Link from "next/link";
 
 import Image from "next/image";
 import {
@@ -53,11 +54,54 @@ export default function Home() {
             <Testimonial />
             <WhatToMake />
           </Line>
-
-          <Container className="flex flex-col pb-4 items-center px-4 relative border-[1px] border-[#FFFFFF30] border-t-transparent">
-            아임웹이 가능한 영역 설명
+          <Container className="flex flex-col relative border-[1px] border-[#FFFFFF30] border-t-transparent">
+            <Title className="px-4 pt-10 font-bold text-lg">
+              온라인 비즈니스를 시작하실건가요? <br />
+              그럼 아임웹을 선택하세요.
+            </Title>
+            <div className="flex pb-8 my-2 px-4">
+              <Link href={"/"} className="text-blue-600 text-sm">
+                아임웹 바로가기 +
+              </Link>
+            </div>
+            <Box className="px-4 py-10 border-[1px] border-[#FFFFFF30] border-x-0 flex flex-col gap-[50px] ">
+              <div className="mt-6">
+                <Title>디자인 모드</Title>
+                <Text>
+                  코딩을 모르셔도, 아임웹은 시각적인 디자인모드를 지원하여
+                  유지보수에도 어려움 없이 변경 및 수정이 가능합니다.
+                </Text>
+              </div>
+              <div>
+                <Title>사이트 기능</Title>
+                <Text>
+                  사이트 용도에 따라 아임웹에 탑재된 다양한 기능을 토대로 알맞은
+                  사이트를 제작하실 수 있습니다.
+                </Text>
+              </div>
+              <div>
+                <Title>관리자 페이지</Title>
+                <Text>
+                  직관적인 관리자페이지를 통해, 마케팅 및 판매채널 / 쇼핑몰운영
+                  / 예약운영 및 손쉬운 관리가 가능합니다.
+                </Text>
+              </div>
+              <div>
+                <Title>기기 접근성</Title>
+                <Text>
+                  아임웹은 모바일/PC/태플릿 사이즈를 지원하며, 반응형웹 페이지를
+                  한 번에 제작하실 수 있습니다.
+                </Text>
+              </div>
+              <div className="mb-6">
+                <Title>광고/판매 채널 관리</Title>
+                <Text>
+                  관리자에 연동된 다양한 광고 및 판매 채널을 통해, 별도의
+                  분산 관리가 아닌, 통합 관리 서비스를 지원합니다.
+                </Text>
+              </div>
+            </Box>
           </Container>
-
           <Line className="border-[1px] border-y-transparent border-[#FFFFFF30]">
             <div>
               <ToggleBtnShiftSheet />

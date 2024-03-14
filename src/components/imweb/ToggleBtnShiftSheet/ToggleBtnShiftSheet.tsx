@@ -19,10 +19,10 @@ const ToggleBtnShiftSheet: React.FC = () => {
   return (
     <div className="relative overflow-hidden flex flex-col items-center border-b-[1px] border-[#FFFFFF30]">
       <CircleAnimation
-        layout="absolute bottom-[-10px]"
+        layout="absolute right-0 bottom-[-120px]"
         className={{
-          first: "bg-green-500 h-[200px] w-[80px] blur-[80px] opacity-60",
-          second: "bg-blue-500 h-[40px] w-[200px] blur-[80px]",
+          first: "bg-blue-500 h-[80px] w-[180px] blur-3xl",
+          second: "bg-green-800 h-[150px] w-[80px] blur-3xl",
         }}
       />
       <Box className="flex flex-col items-center mt-10 gap-1 mb-10 pb-2">

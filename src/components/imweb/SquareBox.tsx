@@ -1,7 +1,7 @@
 import { Box, Container } from "@/manager/lib/HTMLElements";
 
 interface SquareBoxEl {
-  title?: string;
+  title?: React.ReactNode;
   desc?: string;
   className?: string;
 }

@@ -2,10 +2,11 @@ import { Container, Section, Box, Inner } from "@/manager/lib/HTMLElements";
 import { TopNavMenu } from "./TopNavMenu";
 import Link from "next/link";
 import Image from "next/image";
+import { Badge } from "@chakra-ui/react";
 
 export const Navigation = () => {
   return (
-    <Section className="bg-[#00000080] bg-clip-padding backdrop-filter backdrop-blur-lg h-16 border-b-[1px] border-[#FFFFFF10] sticky top-0 z-50">
+    <Section className="bg-[#00000080] bg-clip-padding backdrop-filter backdrop-blur-lg h-16 border-b-[1px] border-[#FFFFFF10] sticky top-0 z-[999]">
       <Inner className="px-4 flex justify-between items-center h-full">
         <Container>
           <Link href={"/"}>
@@ -21,6 +22,14 @@ export const Navigation = () => {
           <TopNavMenu />
         </Container>
       </Inner>
+      <Box className="flex justify-between px-4 bg-[#31ff6590] text-center text-white text-sm py-2 items-center font-bold bg-clip-padding backdrop-filter backdrop-blur-xl">
+        <p>아임웹 제작서비스 이벤트 진행중</p>
+        <Link href={"/pricing"} className="text-sm">
+          <Badge colorScheme="green" className="opacity-[80%]">
+            자세히보기
+          </Badge>
+        </Link>
+      </Box>
     </Section>
   );
 };

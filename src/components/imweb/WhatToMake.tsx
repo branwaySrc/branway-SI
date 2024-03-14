@@ -10,6 +10,9 @@ import {
 import Image from "next/image";
 import { SquareBox } from "@/components/imweb/SquareBox";
 import CircleAnimation from "@/components/animate/CircleAnimation";
+import { AiTwotoneShop } from "react-icons/ai";
+import { TbBrandFinder } from "react-icons/tb";
+import { LuReplaceAll } from "react-icons/lu";
 
 export default function WhatToMake() {
   return (
@@ -33,25 +36,28 @@ export default function WhatToMake() {
             />
           </Box>
         </Container>
-        <Title className="font-bold text-2xl z-10">
-          아임웹으로 뭘 만드는가
-        </Title>
-        <Text className="text-neutral-400 z-10">
-          아임웹은 이유가 있다. 왜 아임웹인가
-        </Text>
+        <div className="flex flex-col gap-1">
+          <Title className="font-bold text-2xl z-10">
+            아임웹으로 사이트 개발하기
+          </Title>
+          <Text className="text-neutral-400 z-10 text-center">
+            아임웹은 저렴한 월구독제로 <br />
+            용도에 따른 다양한 기능을 제공해요
+          </Text>
+        </div>
       </Box>
       <Box className="flex mt-10 z-10 justify-center">
         <SquareBox
           className="border-r-[1px]"
-          title={"쇼핑몰"}
-          desc={"쇼핑몰을 만든다."}
+          title={<AiTwotoneShop size={36} />}
+          desc={"쇼핑몰"}
         />
         <SquareBox
           className="border-r-[1px]"
-          title={"브랜드페이지"}
-          desc={"브랜드를 설명한다."}
+          title={<TbBrandFinder size={36} />}
+          desc={"브랜드 사이트"}
         />
-        <SquareBox title={"예약사이트"} desc={"예약사이트를 만든다."} />
+        <SquareBox title={<LuReplaceAll size={36} />} desc={"예약 사이트"} />
       </Box>
     </Container>
   );
