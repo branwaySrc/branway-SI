@@ -47,7 +47,7 @@ export const HeroSectionLayout = (props: HeroSectionTm) => {
             </Box>
           </Container>
           <Container className="flex justify-center relative w-full h-full items-center">
-            <Box className="text-slate-400 max-w-[80%] text-center leading-7 text-sm">
+            <Box className="text-slate-400 max-w-[80%] text-center leading-5 text-sm">
               {props.desc || "desc"}
             </Box>
           </Container>

@@ -80,8 +80,8 @@ function WhenUse() {
             수월해요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            디자인 및 상품관리 등, 다양한 유지보수를 관리자페이지를 통해
+            관리하실 수 있어요.
           </Text>
         </Box>
         <CircleAnimation
@@ -102,8 +102,8 @@ function WhenUse() {
             <span className="bg-blue-700">한번에 만들어요.</span>
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            하나의 도메인으로 PC버전과 모바일 버전을 동시에 제작 및 관리할 수
+            있어요.
           </Text>
         </Box>
       </Container>
@@ -118,8 +118,8 @@ function WhenUse() {
             있어요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            관리자 페이지를 통해 다양한 채널에 손쉽게 입점 및 관리를 하실 수
+            있어요. 아임웹은 다양한 연동 채널을 보유하고 있답니다.
           </Text>
         </Box>
       </Container>
@@ -134,8 +134,8 @@ function WhenUse() {
             연결하실 수 있어요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            손쉬운 위젯관리를 통해 실시간 채팅 및 문의 응대 게시판을 관리하실 수
+            있어요.
           </Text>
         </Box>
         <CircleAnimation
@@ -156,8 +156,8 @@ function WhenUse() {
             해요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            간편 결제 및 간편 로그인을 위젯을 통해 쉽게 구현이 가능해서, 별도의
+            도입을 위한 개발비용이 요구되지 않아요.
           </Text>
         </Box>
       </Container>
@@ -177,8 +177,8 @@ function WhenNotUse() {
             <span className="bg-slate-700">코딩 스킬이</span> 필요할 수 있어요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            자체 사이트를 개발하실 경우, DB관리 및 서버 & API를 직접 운영해야
+            되며, 유지보수를 위해서는 코딩 스킬이 요구될 수 있어요.
           </Text>
         </Box>
         <CircleAnimation
@@ -199,8 +199,8 @@ function WhenNotUse() {
             되요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            경우에 따라 모바일과 PC 디자인을 따로 관리하고 도메인 또한 구분해서
+            운영하실 경우가 생길 수 있어요.
           </Text>
         </Box>
       </Container>
@@ -211,12 +211,12 @@ function WhenNotUse() {
         </Box>
         <Box className="mt-4 flex flex-col gap-3">
           <Title className="font-bold text-lg">
-            <span className="bg-slate-700">분리된 채널로</span> 각각 대응
-            해야해요.
+            <span className="bg-slate-700">마케팅을 분리된 채널로</span> 각각
+            대응 해야해요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            홍보채널, 판매채널, 응대채널을 각 다른 사이트에서 대응해야될 수
+            있어요. 그래서 대응 누락이 생길 수 있어요.
           </Text>
         </Box>
       </Container>
@@ -231,8 +231,8 @@ function WhenNotUse() {
             있어요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            모바일 버전 또는 웹 버전에 따라 기능이 작동되지 않을 경우가 생길 수
+            있어요.
           </Text>
         </Box>
         <CircleAnimation
@@ -253,8 +253,8 @@ function WhenNotUse() {
             할 수 있어요.
           </Title>
           <Text className="leading-6 text-neutral-400">
-            개발자가 아니여도 유지보수, 관리가 가능한 관리자 모드를 통해 DB/알림
-            메일 및 문자발송/통계/광고/예약/사이트 관리
+            이벤트 페이지를 만들어야 할 경우, 따로 페이지를 구축해야 하실 수
+            있어요.
           </Text>
         </Box>
       </Container>

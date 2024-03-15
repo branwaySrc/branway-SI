@@ -36,11 +36,11 @@ export default function WhatToMake() {
             />
           </Box>
         </Container>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <Title className="font-bold text-2xl z-10">
             아임웹으로 사이트 개발하기
           </Title>
-          <Text className="text-neutral-400 z-10 text-center">
+          <Text className="text-neutral-400 z-10 text-center text-sm">
             아임웹은 저렴한 월구독제로 <br />
             용도에 따른 다양한 기능을 제공해요
           </Text>

@@ -1,7 +1,6 @@
-export const IMWEB_BADGE_LABEL = "브랜웨이와 함께하는 IT 솔루션";
-export const IMWEB_HERO_TITLE = "관리 및 수정이 쉬운 사이트를 만들어드림";
-export const IMWEB_HERO_DESC =
-  "디자인+기획+제작+DB+관리자페이지 모두 올인원 서비스! 어렵게 느껴지던 홈페이지 제작 이제 고민하지마세요!";
+export const IMWEB_BADGE_LABEL = "아임웹 사이트 제작 솔루션";
+export const IMWEB_HERO_TITLE = "온라인을 시작하는 사이트 제작 패키지";
+export const IMWEB_HERO_DESC = `부담없는 비용으로 사이트를 빠르게 제작해 드려요.`;
 
 export const IMWEB_VALID_SECTION_TITLE = "아임웹으로 뭘 만드는가";
 export const IMWEB_VALID_SECTION_DESC = "아임웹은 이유가 있다. 왜 아임웹인가";
@@ -14,5 +13,3 @@ export const IMWEB_VALID_SERVICES = [
 
 export const IMWEB_VALID_REASONS_TITLE = "아임웹의 장점";
 export const IMWEB_VALID_REASONS_DESC = "아임웹은 저렴합니다.";
-
-

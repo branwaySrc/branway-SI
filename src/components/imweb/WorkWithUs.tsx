@@ -4,24 +4,58 @@ import { MdOutlineImagesearchRoller } from "react-icons/md";
 import { SiAdobeillustrator } from "react-icons/si";
 import { FaArrowDown91 } from "react-icons/fa6";
 import { SiAdobephotoshop } from "react-icons/si";
+import { Badge, Stack } from '@chakra-ui/react';
+
+export const WorkingWithUsHeader = () => {
+  return (
+    <>
+      <Container className="flex flex-col items-center px-4 relative">
+        <Box className="h-[100px] w-[2px] bg-gradient-to-t from-green-500 mb-[-2px] mt-20" />
+        <Box className="bg-green-500 p-3 rounded-full" />
+        <Box className="flex flex-col items-center mt-10 gap-3">
+          <Title className="font-bold text-2xl">브랜웨이 X 아임웹의 장점</Title>
+          <Text className="text-neutral-400">파트너님께 아낌없이 드려요.</Text>
+        </Box>
+      </Container>
+      <Box className="flex justify-center mt-5">
+        <Box className="border-[1px] border-[#FFFFFF30] p-2 rounded-lg bg-black">
+          <Stack direction="row">
+            <Badge colorScheme="blue" className="opacity-[80%]">
+              아이디어
+            </Badge>
+            <Badge colorScheme="green" className="opacity-[80%]">
+              디자인
+            </Badge>
+            <Badge colorScheme="yellow" opacity={10} className="opacity-[80%]">
+              애셋
+            </Badge>
+            <Badge colorScheme="purple" opacity={10} className="opacity-[80%]">
+              이벤트
+            </Badge>
+          </Stack>
+        </Box>
+      </Box>
+    </>
+  );
+};
 
 export const WorkWithUsDesign = () => {
   return (
     <Section className="mt-10">
       <Inner className="px-4 flex flex-col gap-4">
         <Container>
-          <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
+          <Box className="border-[1px] border-[#FFFFFF30] rounded-full w-[50px] h-[50px] flex items-center justify-center">
             <FaRegMessage size={20} color="#FFFFFF99" />
           </Box>
           <Box className="mt-4">
             <Text className="flex flex-col gap-2">
               <span className="font-bold">
                 <span className="bg-blue-800">사업의 브랜딩을</span> 바로
-                잡아드립니다.
+                잡아드려요.
               </span>
               <span className="text-neutral-400">
-                고객님과 함께 진행하는 온라인 미팅에서 필요한 포인트를 짚어
-                브랜드만이 가질 수 있는 스토리를 완성시킵니다.
+                고객님과 함께 진행하는 온라인 미팅에서 필요한 포인트를 잡아
+                파트너님의 브랜드만이 가질 수 있는 스토리를 완성시킵니다.
               </span>
             </Text>
           </Box>
@@ -47,14 +81,14 @@ export const WorkWithUsReduceCost = () => {
     <Section className="mt-10">
       <Inner className="px-4 flex flex-col gap-4">
         <Container>
-          <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
+          <Box className="border-[1px] border-[#FFFFFF30] rounded-full w-[50px] h-[50px] flex items-center justify-center">
             <FaArrowDown91 size={20} color="#FFFFFF99" />
           </Box>
           <Box className="mt-4">
             <Text className="text-neutral-300 leading-6 flex flex-col gap-2">
               <span className="font-bold">
                 <span className="bg-green-900"> 점진적인 개발 방향성을 </span>{" "}
-                제시해 드립니다.
+                제시해 드려요.
               </span>
               <span className="text-neutral-400">
                 대부분의 파트너분들께선, 이전 사이트에 다양한 기능을 구현했어도
@@ -107,19 +141,18 @@ export const WorkWithUsImageAsset = () => {
     <Section className="py-10 border-b-[1px] border-[#FFFFFF30]">
       <Inner className="px-4 flex flex-col gap-4">
         <Container>
-          <Box className="border-[1px] border-slate-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
+          <Box className="border-[1px] border-[#FFFFFF30] rounded-full w-[50px] h-[50px] flex items-center justify-center">
             <MdOutlineImagesearchRoller size={20} color="#FFFFFF99" />
           </Box>
           <Box className="mt-4">
             <Text className="text-neutral-300 leading-6 flex flex-col gap-2">
               <span className="font-bold">
                 <span className="bg-amber-600">모든 애셋의 원본을 </span>
-                제공해드립니다.
+                제공해드려요.
               </span>
               <span className="text-neutral-400">
-                추가비용 없이 모든 애셋은 작업 완료 후, 전달드립니다. 요구에
-                따라 배경이미지 및 대체할 수 있는 이미지 또한 함께 제공하고
-                있습니다.
+                추가비용 없이 모든 애셋은 작업 완료 후, 전달드려요. 요청에 따라
+                배경이미지 및 대체할 수 있는 이미지도 함께 제공하고 있어요.
               </span>
             </Text>
           </Box>

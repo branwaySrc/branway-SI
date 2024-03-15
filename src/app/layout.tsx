@@ -26,9 +26,7 @@ export default function RootLayout({
           <Navigation />
           {children}
           <Footer />
-          <>
-            <EventDrawer />
-          </>
+          <>{/* <EventDrawer /> */}</>
         </ChakraProvider>
       </body>
     </html>

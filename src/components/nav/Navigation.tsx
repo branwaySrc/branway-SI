@@ -12,7 +12,7 @@ export const Navigation = () => {
           <Link href={"/"}>
             <Image
               alt="branway logo"
-              src={"/branway.svg"}
+              src={"/logo_branway.png"}
               width={100}
               height={80}
             />
@@ -23,7 +23,7 @@ export const Navigation = () => {
         </Container>
       </Inner>
       <Box className="flex justify-between px-4 bg-green-800 text-center text-white text-sm py-2 items-center font-bold bg-clip-padding backdrop-filter backdrop-blur-xl opacity-90">
-        <p>아임웹 사이트제작 서비스 가격할인 이벤트 진행중!</p>
+        <p>아임웹 사이트제작 가격할인 이벤트 진행중!</p>
         <Link href={"/pricing"} className="text-sm">
           <Badge colorScheme="green" className="opacity-[80%]">
             자세히보기

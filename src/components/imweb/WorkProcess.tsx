@@ -16,12 +16,12 @@ export const WorkProcess = () => {
       <Container>
         <Box className="flex flex-col items-center gap-4 border-y-[1px] border-[#FFFFFF30] relative py-20 my-10 ">
           <Text className="text-slate-400 flex items-center gap-2 z-10">
-            <FaKey size={18} /> 브랜웨이의 스타일
+            <FaKey size={16} /> 브랜웨이의 스타일
           </Text>
           <Title className="font-bold text-white text-2xl z-10">
-            빠른 소통, 그리고 명확한 결과물
+            빠른 소통과 명확한 결과물
           </Title>
-          <Text className="text-center text-slate-400 z-10 px-2">
+          <Text className="text-center text-slate-400 z-10 px-4">
             간결한 서비스 또는 본격적인 서비스를 운영하기 앞서, 브랜딩을 위한
             페이지를 원하시는 분들이 많이 찾아주셨어요.
           </Text>
@@ -39,7 +39,7 @@ export const WorkProcess = () => {
                   브랜웨이 소통창구를
                 </span>
                 통해 필요하신 서비스에 대해 설명해주세요. 기획이 없으시더라도
-                어떠한 추가적인 비용이 요구되지 않습니다.
+                추가적인 비용이 없으니 안심하셔도 되요.
               </Text>
             </Box>
             <Container className="flex flex-col gap-4 px-6 text-sm">
@@ -75,14 +75,14 @@ export const WorkProcess = () => {
                 </Text>
               </Box>
             </Container>
-            <Box className="py-8 text-center font-light border-t-[1px] border-[#FFFFFF30] mt-10">
-              <Text className="px-2">
+            <Box className="py-8 text-center font-light border-t-[1px] border-[#FFFFFF30] mt-10 flex flex-col items-center">
+              <Text className="px-2 max-w-[80%]">
                 <span className="font-bold text-white">
-                  양식을 토대로 기획을 제안드립니다.
+                  요청안을 검토한 후 기획을 제안드려요.
                 </span>
                 <br />
-                또한, 미리 디자인 느낌을 경험하실 수 있도록 레퍼런스 사이트를
-                제공해 드립니다.
+                미리 디자인 느낌을 경험하실 수 있도록 레퍼런스 사이트를 제공해
+                드립니다.
               </Text>
             </Box>
             <Container className="flex flex-col gap-4 px-6 text-sm">
@@ -117,7 +117,7 @@ export const WorkProcess = () => {
             <Box className="py-8 text-center font-light border-t-[1px] border-[#FFFFFF30] mt-10">
               <Text className="px-2">
                 <span className="font-bold text-white">
-                  온라인 계약서를 전달드립니다.
+                  마음에 드셨다면, 온라인 계약서를 전달드려요.
                 </span>
                 <br />
                 제공된 기획 레퍼런스의 결과물을 토대로 제작 확정을 진행합니다.
@@ -127,8 +127,8 @@ export const WorkProcess = () => {
               <Box className="flex justify-end px-6">
                 <Text className="max-w-[90%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
                   네, 그럼 레퍼런스 2번을 토대로 작업을 진행해 드리겠습니다!
-                  그럼 계약을 진행하도록 하겠습니다! 비대면 계약서를 이메일 또는
-                  카카오톡으로 전달드릴 예정이에요! 꼭 참고해 주시길 바랍니다!
+                  그럼 계약진행을 위해 비대면 계약서를 이메일 또는 카카오톡으로
+                  전달드릴 예정이에요! 꼭 참고해 주시길 바랍니다!
                 </Text>
               </Box>
               <Box className="flex justify-end px-6">
@@ -141,14 +141,14 @@ export const WorkProcess = () => {
               <div className="bg-gradient-to-t from-black w-full h-[250px] absolute bottom-0" />
             </Container>
             <Container className="bg-black border-b-[1px] border-[#FFFFFF30] py-10 px-4 flex flex-col gap-6">
-              <Text className="leading-8 text-white text-lg px-2">
+              <Text className="leading-8 text-white text-lg px-2 font-bold">
                 막막했던 브랜드 레퍼런스와 스토리를 사이트에 잘 녹여내어
-                주었습니다. 또한 작업 중, 유지 관리가 어려운 항목을 미리 안내 해
-                주어서 사전 예습을 할 수 있었습니다.
+                주었습니다. 또한 운영 중, 어려움이 있는 잔업들을 함께 해결해
+                주셨습니다. 지금도 함께 사업을 꾸려 나가는 파트너입니다.
               </Text>
               <Box className="flex justify-end">
                 <Text className="px-3 py-1 rounded-full text-sm border-[1px] border-[#FFFFFF30] text-neutral-200">
-                  압구정로데오 명품시계샵
+                  압구정로데오 명품시계샵 대표
                 </Text>
               </Box>
             </Container>
