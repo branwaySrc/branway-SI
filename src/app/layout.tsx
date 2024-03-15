@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { NotoSans } from "@/manager/lib/@";
 import { ChakraProvider } from "@/manager/provider/chakraProvider";
 import { Footer } from "@/components/footer/Footer";
+import { PCFooter } from "@/components/pc/PCFooter";
 
 import "./globals.css";
-
-import { EventDrawer } from "@/components/imweb/EventDrawer";
-
+import { Wrapper } from "@/manager/lib/@";
 import { Navigation } from "@/components/nav/Navigation";
+import LayoutHero from "@/components/pc/LayoutHero";
 
 export const metadata: Metadata = {
   title: "브랜웨이",
@@ -23,10 +23,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${NotoSans.className} bg-black`}>
         <ChakraProvider>
-          <Navigation />
-          {children}
-          <Footer />
-          <>{/* <EventDrawer /> */}</>
+          <Wrapper className="overflow-y-hidden md:flex">
+            <div className="hidden md:inline-flex md:w-[100vw] relative md:flex-wrap md:min-h-[100vh]">
+              <LayoutHero />
+            </div>
+            <div className="md:min-h-[100vh] relative">
+              <Navigation />
+              {children}
+              <Footer />
+            </div>
+          </Wrapper>
+
         </ChakraProvider>
       </body>
     </html>

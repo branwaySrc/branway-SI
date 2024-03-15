@@ -6,14 +6,15 @@ import {
   Section,
   Line,
   Inner,
+  Wrapper,
 } from "@custom-syntax/HTMLElements";
 
-export const Footer = () => {
+export const PCFooter = () => {
   const DateOfYear = new Date().getFullYear();
 
   return (
-    <Section className=" bg-neutral-950">
-      <Inner className="px-4 py-10">
+    <Section className="bg-neutral-950">
+      <Wrapper className="text-white p-10">
         <Container className="flex flex-col gap-1 text-sm">
           <Title className="font-bold text-lg">브랜웨이</Title>
           <Text className="font-bold">고객 센터 : 0504-4587-7412</Text>
@@ -28,7 +29,7 @@ export const Footer = () => {
           </Box>
           <div className="h-[50px] w-full" />
         </Container>
-      </Inner>
+      </Wrapper>
     </Section>
   );
 };

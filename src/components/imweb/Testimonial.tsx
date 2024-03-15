@@ -10,12 +10,7 @@ import {
 
 export default function Testimonial() {
   return (
-    <Container
-      breakClass={{
-        lg: "lg:flex lg:flex-row",
-      }}
-      className="z-50 flex flex-col text-center"
-    >
+    <Container className="z-50 flex flex-col text-center">
       <Section className="absolute w-[50%] h-full right-0 bg-gradient-to-b from-[#000000] to-transparent" />
       <Box className="w-full text-neutral-400 z-50 h-full flex flex-col">
         <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2 relative overflow-hidden">

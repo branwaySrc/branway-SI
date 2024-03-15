@@ -6,7 +6,7 @@ import { Badge } from "@chakra-ui/react";
 
 export const Navigation = () => {
   return (
-    <Section className="bg-[#00000080] bg-clip-padding backdrop-filter backdrop-blur-lg h-16 border-b-[1px] border-[#FFFFFF10] sticky top-0 z-[999]">
+    <Section className="md:hidden bg-[#00000080] bg-clip-padding backdrop-filter backdrop-blur-lg h-16 border-b-[1px] border-[#FFFFFF10] sticky top-0 z-[999]">
       <Inner className="px-4 flex justify-between items-center h-full">
         <Container>
           <Link href={"/"}>
@@ -22,7 +22,7 @@ export const Navigation = () => {
           <TopNavMenu />
         </Container>
       </Inner>
-      <Box className="flex justify-between px-4 bg-green-800 text-center text-white text-sm py-2 items-center font-bold bg-clip-padding backdrop-filter backdrop-blur-xl opacity-90">
+      <Box className="md:hidden flex justify-between px-4 bg-green-800 text-center text-white text-sm py-2 items-center font-bold bg-clip-padding backdrop-filter backdrop-blur-xl opacity-90">
         <p>아임웹 사이트제작 가격할인 이벤트 진행중!</p>
         <Link href={"/pricing"} className="text-sm">
           <Badge colorScheme="green" className="opacity-[80%]">

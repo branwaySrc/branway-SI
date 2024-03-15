@@ -18,10 +18,10 @@ import { KakaoPopover } from "@/components/acquire/kakaoPopover";
 
 const AcquirePage = () => {
   return (
-    <Section>
-      <Inner className="px-2">
-        <Container className="flex flex-col items-center border-[1px] border-[#FFFFFF30] px-2 py-10 bg-neutral-950">
-          <Title className=" font-bold text-sky-500 text-center">
+    <Section className="min-h-[85vh]">
+      <Inner>
+        <Container className="flex flex-col items-center border-[1px] border-[#FFFFFF30] px-2 py-10 mt-10 md:mt-0 bg-neutral-950">
+          <Title className=" font-bold text-neutral-400 text-center">
             고객문의센터
           </Title>
           <Text className="text-2xl text-center mt-2 font-bold">

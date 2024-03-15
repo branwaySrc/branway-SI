@@ -10,7 +10,7 @@ import {
 
 export default function PricingPage() {
   return (
-    <Section>
+    <Section className="min-h-[80vh]">
       <Inner>
         <Container>Pricing Page</Container>
       </Inner>

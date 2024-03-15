@@ -1,21 +1,7 @@
-import {
-  Container,
-  Inner,
-  AbsoluteBg,
-  Box,
-  Text,
-  Title,
-  Section,
-  Figure,
-  Line,
-} from "@custom-syntax/HTMLElements";
+import { Container, Inner, Section, Line } from "@custom-syntax/HTMLElements";
 import { HeroSectionLayout } from "@/components/imweb/HeroSectionLayout";
 import { CONFIG } from "@/manager/statics/@";
-import { DrawerPopUp } from "@/components/imweb/DrawerPopUp";
 import { WorkProcess } from "@/components/imweb/WorkProcess";
-import { Badge, Stack } from "@chakra-ui/react";
-
-import Image from "next/image";
 import {
   WorkWithUsDesign,
   WorkWithUsImageAsset,
@@ -25,13 +11,13 @@ import {
 import ToggleBtnShiftSheet from "@/components/imweb/ToggleBtnShiftSheet/ToggleBtnShiftSheet";
 import Testimonial from "@/components/imweb/Testimonial";
 import WhatToMake from "@/components/imweb/WhatToMake";
-import ReasonForRecommend from "@/components/imweb/ReasonForRecommend";
-import Loading from "@/components/loading";
+
 import Portfolio from "@/components/imweb/Portfolio";
-import Link from "next/link";
+
 import ProjectNeeds from "@/components/imweb/ProjectNeeds";
 import ProjectFAQ from "@/components/imweb/FAQ";
 import ClosingSection from "@/components/ClosingSection";
+import ReasonForRecommend from "@/components/imweb/ReasonForRecommend";
 
 export default function Home() {
   return (

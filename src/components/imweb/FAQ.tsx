@@ -32,7 +32,7 @@ export default function ProjectFAQ() {
                   pt={4}
                 >
                   <Title className="font-bold text-left">
-                    아임웹에서 어떤 기능이던지 모두 구현이 가능한가요?
+                    아임웹에서 원하는 모든 기능구현이 가능한지 알고싶습니다.
                   </Title>
                   <AccordionIcon />
                 </AccordionButton>
@@ -55,7 +55,7 @@ export default function ProjectFAQ() {
                   pt={4}
                 >
                   <Title className="font-bold text-left">
-                    제작비용 외, 초기에 들어가는 비용을 알고싶어요.
+                    제작비용 외, 처음에 들어가는 부가비용들을 알고싶어요.
                   </Title>
                   <AccordionIcon />
                 </AccordionButton>
@@ -77,8 +77,8 @@ export default function ProjectFAQ() {
                   pt={4}
                 >
                   <Title className="font-bold text-left">
-                    평균적인 작업 기간과 혹시 작업중 추가내용이 있다면 어떻게
-                    되는지 알고 싶어요.
+                    평균 작업기간과, 작업중 추가내용이 있다면 어떻게 되는지 알고
+                    싶어요.
                   </Title>
                   <AccordionIcon />
                 </AccordionButton>
@@ -93,7 +93,7 @@ export default function ProjectFAQ() {
                   <Link href={"/pricing"} className="text-blue-500 text-sm">
                     가격정책 바로가기
                   </Link>
-                  <Link href={"/pricing"} className="text-blue-500 text-sm">
+                  <Link href={"/acquire"} className="text-blue-500 text-sm">
                     문의창구 바로가기
                   </Link>
                 </div>
@@ -107,8 +107,7 @@ export default function ProjectFAQ() {
                   pt={4}
                 >
                   <Title className="font-bold text-left">
-                    제 사이트를 포트폴리오로 노출 하고싶지 않다면 어떻게 되는지
-                    알고싶어요.
+                    포트폴리오로 노출 하고싶지 않다면 어떻게 되는지 알고싶어요.
                   </Title>
                   <AccordionIcon />
                 </AccordionButton>
