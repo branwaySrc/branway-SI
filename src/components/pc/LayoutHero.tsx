@@ -5,6 +5,7 @@ import { LuHeartHandshake } from "react-icons/lu";
 import Link from "next/link";
 import { Badge } from "@chakra-ui/react";
 import PCMenu from "./PCMenu";
+import PCButton from "./PCButton";
 
 export default function LayoutHero() {
   return (
@@ -39,6 +40,7 @@ export default function LayoutHero() {
               </Badge>
             </Link>
           </Box>
+          <PCButton />
         </Section>
         <Title className="mb-2 font-bold flex gap-2 items-center">
           <LuHeartHandshake color="#FFFFFF30" />
@@ -47,74 +49,74 @@ export default function LayoutHero() {
         <Section className="grid grid-cols-3">
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/TIMEBLUE.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/Manrochon.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/metalux.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/enuri.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/cicon.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/film.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/LUXAGAIN.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/PHYSIQUE.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
           <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
             <Image
-              alt="branway logo"
-              src={"/logo_branway.png"}
+              alt="partner logo"
+              src={"/partners/mj.png"}
               width={100}
-              height={80}
+              height={15}
             />
           </Box>
         </Section>

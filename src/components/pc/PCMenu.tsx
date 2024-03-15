@@ -23,7 +23,7 @@ export default function PCMenu() {
         _focus={{ boxShadow: "outline" }}
       >
         <div className="flex gap-2">
-          솔루션 보기
+          메뉴 보기
           <ChevronDownIcon />
         </div>
       </MenuButton>

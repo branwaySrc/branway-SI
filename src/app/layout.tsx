@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { NotoSans } from "@/manager/lib/@";
 import { ChakraProvider } from "@/manager/provider/chakraProvider";
 import { Footer } from "@/components/footer/Footer";
-import { PCFooter } from "@/components/pc/PCFooter";
+
 
 import "./globals.css";
 import { Wrapper } from "@/manager/lib/@";

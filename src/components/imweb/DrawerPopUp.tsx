@@ -52,80 +52,80 @@ export const DrawerPopUp = () => {
               opts={{
                 align: "start",
               }}
-              className="w-full"
+              className="w-[50%]"
             >
               <CarouselContent>
                 <>
                   <CarouselItem>
                     <section>
-                      <div className="flex aspect-square items-center justify-center p-2">
+                      <div className="flex flex-col aspect-square items-center justify-center p-2 gap-4">
                         <Image
                           src={"/portfolio/portfolio1.png"}
                           alt="company"
                           height={300}
                           width={200}
                         />
+                        <article className="text-center pb-4">
+                          <h1>타임블루 - 명품시계 매장 운영 사이트</h1>
+                          <p className="text-sm text-neutral-400">
+                            카페24에서 아임웹 서비스로 이전
+                          </p>
+                        </article>
                       </div>
-                      <article className="text-center pb-4">
-                        <h1>타임블루 - 명품시계 매장 운영 사이트</h1>
-                        <p className="text-sm text-neutral-400">
-                          카페24에서 아임웹 서비스로 이전
-                        </p>
-                      </article>
                     </section>
                   </CarouselItem>
                   <CarouselItem>
                     <section>
-                      <div className="flex aspect-square items-center justify-center p-2">
+                      <div className="flex flex-col gap-4 aspect-square items-center justify-center p-2">
                         <Image
                           src={"/portfolio/portfolio2.png"}
                           alt="company"
                           height={300}
                           width={200}
                         />
+                        <article className="text-center pb-4">
+                          <h1>메타럭스 - 중고명품 판매 사이트</h1>
+                          <p className="text-sm text-neutral-400">
+                            네이버스토어에서 아임웹 서비스로 이전
+                          </p>
+                        </article>
                       </div>
-                      <article className="text-center pb-4">
-                        <h1>메타럭스 - 중고명품 판매 사이트</h1>
-                        <p className="text-sm text-neutral-400">
-                          네이버스토어에서 아임웹 서비스로 이전
-                        </p>
-                      </article>
                     </section>
                   </CarouselItem>
                   <CarouselItem>
                     <section>
-                      <div className="flex aspect-square items-center justify-center p-2">
+                      <div className="flex flex-col gap-4 aspect-square items-center justify-center p-2">
                         <Image
                           src={"/portfolio/portfolio3.png"}
                           alt="company"
                           height={300}
                           width={200}
                         />
+                        <article className="text-center pb-4">
+                          <h1>먼로슨 - 해외 직수입 상품 판매 쇼핑몰</h1>
+                          <p className="text-sm text-neutral-400">
+                            네이버스토어에서 아임웹 서비스로 이전
+                          </p>
+                        </article>
                       </div>
-                      <article className="text-center pb-4">
-                        <h1>먼로슨 - 해외 직수입 상품 판매 쇼핑몰</h1>
-                        <p className="text-sm text-neutral-400">
-                          네이버스토어에서 아임웹 서비스로 이전
-                        </p>
-                      </article>
                     </section>
                   </CarouselItem>
                   <CarouselItem>
                     <section>
-                      <div className="flex aspect-square items-center justify-center p-2">
+                      <div className="flex flex-col gap-4 aspect-square items-center justify-center p-2">
                         <Image
                           src={"/portfolio/portfolio4.png"}
                           alt="company"
                           height={300}
                           width={200}
                         />
+                        <article className="text-center pb-4">
+                          <h1>이누리 - 전기오토바이 제조 판매</h1>
+                          <p className="text-sm text-neutral-400">
+                            신규 운영 및 제작
+                          </p>
+                        </article>
                       </div>
-                      <article className="text-center pb-4">
-                        <h1>이누리 - 전기오토바이 제조 판매</h1>
-                        <p className="text-sm text-neutral-400">
-                          신규 운영 및 제작
-                        </p>
-                      </article>
                     </section>
                   </CarouselItem>
                 </>
