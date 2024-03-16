@@ -8,7 +8,7 @@ export default function TemplateIntroSection() {
         <div>
           <Badge variant="outline">출시예정</Badge>
         </div>
-        <h1 className="font-bold text-2xl text-center">
+        <h1 className="font-bold text-xl text-center">
           개발의 시작을 출시 단계부터,
           <br />
           서비스 템플릿(앱,웹) 소스로 시작하세요.

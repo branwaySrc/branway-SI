@@ -10,7 +10,7 @@ export default function ImwebIntroSection() {
             이벤트
           </Badge>
         </div>
-        <h1 className="font-bold text-2xl text-center">
+        <h1 className="font-bold text-xl text-center">
           아임웹을 통해 사업에 필요한
           <br />
           강력한 홈페이지를 만들어 드립니다.

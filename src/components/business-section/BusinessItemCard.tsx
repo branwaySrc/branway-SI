@@ -21,7 +21,7 @@ export default function BusinessItemCard(props: { className?: string }) {
             src={"/imweb_transparent.png"}
             alt="imweb"
           />
-          <article className="flex flex-col gap-1">
+          <article className="flex flex-col gap-2">
             <div>
               <Badge variant="outline" colorScheme="green">
                 이벤트
@@ -44,7 +44,7 @@ export default function BusinessItemCard(props: { className?: string }) {
             <BiLogoPostgresql size={30} color="#005DD6" />
             <FaAws size={30} color="#FFFFFF" />
           </div>
-          <article className="flex flex-col gap-1">
+          <article className="flex flex-col gap-2">
             <div>
               <Badge variant="outline">출시예정</Badge>
             </div>
@@ -64,7 +64,7 @@ export default function BusinessItemCard(props: { className?: string }) {
             <DiIllustrator size={34} />
             <DiPhotoshop size={34} />
           </div>
-          <article className="flex flex-col gap-1">
+          <article className="flex flex-col gap-2">
             <div>
               <Badge variant="outline">출시예정</Badge>
             </div>
@@ -79,7 +79,7 @@ export default function BusinessItemCard(props: { className?: string }) {
       <section className="border-[1px] border-[#FFFFFF30] rounded-2xl p-2 w-full hover:border-[#FFFFFF70] border-dashed">
         <div className="flex flex-col rounded-lg justify-between bg-gradient-to-r from-black to-neutral-950 hover:to-neutral-900 h-[230px] border-[#FFFFFF10] border-[1px] p-4">
           <TiSpannerOutline size={40} />
-          <article className="flex flex-col gap-1">
+          <article className="flex flex-col gap-2">
             <div>
               <Badge variant="outline" colorScheme="yellow">
                 유지보수
@@ -98,10 +98,10 @@ export default function BusinessItemCard(props: { className?: string }) {
           <Image
             height={40}
             width={110}
-            src={"/K_STARTUP_logo.png"}
+            src={"/K_STARTUP_Logo.png"}
             alt="k-startup"
           />
-          <article className="flex flex-col gap-1">
+          <article className="flex flex-col gap-2">
             <div>
               <Badge variant="outline">지원마감</Badge>
             </div>
