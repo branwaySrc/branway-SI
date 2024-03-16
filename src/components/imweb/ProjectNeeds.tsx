@@ -18,33 +18,35 @@ export default function ProjectNeeds() {
       <Section className="flex flex-col gap-4">
         <Box className="mx-4 p-4 border-[1px] rounded-2xl border-[#FFFFFF30]">
           <Title className="font-bold">회사로고</Title>
-          <Text className="text-neutral-400">
+          <Text className="text-neutral-400 text-sm">
             로고가 없으실 경우, 임의적으로 만들어 드려요!
           </Text>
         </Box>
         <Box className="mx-4 p-4 border-[1px] rounded-2xl border-[#FFFFFF30]">
           <Title className="font-bold">도메인</Title>
-          <Text className="text-neutral-400">
+          <Text className="text-neutral-400 text-sm">
             제작이 완료된 이후에 제공해 주셔도 되요!
           </Text>
         </Box>
         <Box className="mx-4 p-4 border-[1px] rounded-2xl border-[#FFFFFF30]">
           <Title className="font-bold">사업자정보</Title>
-          <Text className="text-neutral-400">
-            네이버 및 구글 노출을 위해 사업자정보를 제공해 주셔야 되요!
+          <Text className="text-neutral-400 text-sm">
+            네이버 및 구글 노출, 그리고 사이트의 소유주 노출을 위해 사업자정보를
+            제공해 주셔야 되요!
           </Text>
         </Box>
         <Box className="mx-4 p-4 border-[1px] rounded-2xl border-[#FFFFFF30]">
           <Title className="font-bold">기획 레퍼런스</Title>
-          <Text className="text-neutral-400">
+          <Text className="text-neutral-400 text-sm">
             디자인 레퍼런스 또는 사업 레퍼런스를 제공해 주세요! 없으시다면
             저희가 제안해 드릴게요!
           </Text>
         </Box>
         <Box className="mx-4 p-4 border-[1px] rounded-2xl border-[#FFFFFF30]">
           <Title className="font-bold">원하시는 기능</Title>
-          <Text className="text-neutral-400">
-            구현 가능여부를 검토를 위한 필수기능을 꼭 말씀해 주셔야 되요!
+          <Text className="text-neutral-400 text-sm">
+            구현 가능여부를 검토를 위해 사업에 필요하신 필수기능을 꼭 말씀해
+            주셔야 되요!
           </Text>
         </Box>
       </Section>

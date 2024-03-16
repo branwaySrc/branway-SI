@@ -13,7 +13,7 @@ export const Inner: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
   const { className, ...otherProps } = props;
   return (
     <div
-      className={`max-w-screen-lg min-w-screen-sm mx-auto md:w-[50vw] md:min-w-[430px] md:max-w-[580px] text-slate-200 ${className}`}
+      className={`max-w-screen-lg min-w-screen-sm mx-auto lg:w-[50vw] lg:min-w-[430px] lg:max-w-[580px] text-slate-200 ${className}`}
       {...otherProps}
     />
   );

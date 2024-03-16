@@ -9,7 +9,7 @@ import PCButton from "./PCButton";
 
 export default function LayoutHero() {
   return (
-    <Section className="flex items-center h-screen fixed min-w-[530px] flex-1">
+    <Section className="flex items-center h-screen min-w-[530px">
       <CircleAnimation
         layout="absolute ml-[100px]"
         className={{
@@ -17,8 +17,10 @@ export default function LayoutHero() {
           second: "bg-slate-600 h-[150px] w-[80px] blur-3xl",
         }}
       />
-      <Container className="pl-10 z-10">
-        <PCMenu />
+      <Container className="pl-10 z-10 w-full">
+        <>
+          <PCMenu />
+        </>
         <Section className="my-10 flex flex-col gap-4">
           <Image
             alt="branway logo"
@@ -47,7 +49,7 @@ export default function LayoutHero() {
           브랜웨이 파트너
         </Title>
         <Section className="grid grid-cols-3">
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-[0px] border-r-[0px] border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/TIMEBLUE.png"}
@@ -55,7 +57,7 @@ export default function LayoutHero() {
               height={15}
             />
           </Box>
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-0 border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/Manrochon.png"}
@@ -63,7 +65,7 @@ export default function LayoutHero() {
               height={15}
             />
           </Box>
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-[0px] border-l-[0px] border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/metalux.png"}
@@ -71,7 +73,7 @@ export default function LayoutHero() {
               height={15}
             />
           </Box>
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-[0px] border-r-[0px] border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/enuri.png"}
@@ -79,7 +81,7 @@ export default function LayoutHero() {
               height={15}
             />
           </Box>
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-0 border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/cicon.png"}
@@ -87,7 +89,7 @@ export default function LayoutHero() {
               height={15}
             />
           </Box>
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-[0px] border-l-[0px] border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/film.png"}
@@ -95,7 +97,7 @@ export default function LayoutHero() {
               height={15}
             />
           </Box>
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-[0px] border-r-[0px] border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/LUXAGAIN.png"}
@@ -103,7 +105,7 @@ export default function LayoutHero() {
               height={15}
             />
           </Box>
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-0 border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/PHYSIQUE.png"}
@@ -111,7 +113,31 @@ export default function LayoutHero() {
               height={15}
             />
           </Box>
-          <Box className="border-[1px] border-[#FFFFFF30] flex items-center justify-center p-4">
+          <Box className="border-[1px] border-b-[0px] border-l-[0px] border-[#FFFFFF30] flex items-center justify-center p-5">
+            <Image
+              alt="partner logo"
+              src={"/partners/mj.png"}
+              width={100}
+              height={15}
+            />
+          </Box>
+          <Box className="border-[1px]  border-r-[0px] border-[#FFFFFF30] flex items-center justify-center p-5">
+            <Image
+              alt="partner logo"
+              src={"/partners/mj.png"}
+              width={100}
+              height={15}
+            />
+          </Box>
+          <Box className="border-[1px]  border-[#FFFFFF30] flex items-center justify-center p-5">
+            <Image
+              alt="partner logo"
+              src={"/partners/mj.png"}
+              width={100}
+              height={15}
+            />
+          </Box>
+          <Box className="border-[1px]  border-l-[0px] border-[#FFFFFF30] flex items-center justify-center p-5">
             <Image
               alt="partner logo"
               src={"/partners/mj.png"}

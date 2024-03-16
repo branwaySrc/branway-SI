@@ -88,24 +88,23 @@ export const WorkProcess = () => {
             <Container className="flex flex-col gap-4 px-6 text-sm">
               <Box className="flex justify-end">
                 <Text className="max-w-[90%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
-                  혹시, 전달해 주신 구글폼 내용을 토대로 레퍼런스를 몇가지 전달
-                  드렸어요! 원하시는 부분을 선택해 주시면 감사드리겠습니다.
-                </Text>
-              </Box>
-              <Box className="flex justify-end">
-                <Text className="max-w-[90%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
-                  혹시, 전달해 주신 구글폼 내용을 토대로 레퍼런스를 몇가지 전달
-                  드렸어요! 원하시는 부분을 선택해 주시면 감사드리겠습니다.
-                </Text>
-              </Box>
-              <Box className="flex justify-end">
-                <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
-                  레퍼런스 1
+                  전달해 주신{" "}
+                  <span className="bg-green-900">
+                    {" "}
+                    구글폼 내용을 토대로 레퍼런스를{" "}
+                  </span>{" "}
+                  몇가지 전달 드렸어요! 원하시는 부분을 선택해 주시면
+                  감사드리겠습니다.
                 </Text>
               </Box>
               <Box className="flex justify-end">
                 <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
-                  레퍼런스 2
+                  레퍼런스_1.pdf
+                </Text>
+              </Box>
+              <Box className="flex justify-end">
+                <Text className="max-w-[70%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
+                  레퍼런스_2.pdf
                 </Text>
               </Box>
               <Box className="flex justify-start">
@@ -127,8 +126,12 @@ export const WorkProcess = () => {
               <Box className="flex justify-end px-6">
                 <Text className="max-w-[90%] border-2 bg-[#14141499] border-neutral-800 text-white rounded-lg py-4 text-left px-4">
                   네, 그럼 레퍼런스 2번을 토대로 작업을 진행해 드리겠습니다!
-                  그럼 계약진행을 위해 비대면 계약서를 이메일 또는 카카오톡으로
-                  전달드릴 예정이에요! 꼭 참고해 주시길 바랍니다!
+                  그럼{" "}
+                  <span className="bg-green-900">
+                    {" "}
+                    계약진행을 위해 비대면 계약서를 이메일 또는 카카오톡{" "}
+                  </span>{" "}
+                  으로 전달드릴 예정이에요! 꼭 참고해 주시길 바랍니다!
                 </Text>
               </Box>
               <Box className="flex justify-end px-6">

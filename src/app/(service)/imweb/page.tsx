@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main className="bg-[#050505] px-2">
       <Inner>
-        <Container>
+        <Container className="mt-[100px] lg:mt-0">
           <HeroSectionLayout
             badgeLabel={CONFIG.IMWEB_BADGE_LABEL}
             title={CONFIG.IMWEB_HERO_TITLE}

@@ -6,7 +6,7 @@ import { Badge } from "@chakra-ui/react";
 
 export const Navigation = () => {
   return (
-    <Section className="md:hidden bg-[#00000080] bg-clip-padding backdrop-filter backdrop-blur-lg h-16 border-b-[1px] border-[#FFFFFF10] sticky top-0 z-[999]">
+    <Section className="lg:hidden bg-[#00000080] bg-clip-padding backdrop-filter backdrop-blur-lg h-16 border-b-[1px] border-[#FFFFFF10] fixed top-0 z-[999] w-full">
       <Inner className="px-4 flex justify-between items-center h-full">
         <Container>
           <Link href={"/"}>
@@ -14,7 +14,7 @@ export const Navigation = () => {
               alt="branway logo"
               src={"/logo_branway.png"}
               width={100}
-              height={80}
+              height={20}
             />
           </Link>
         </Container>
@@ -22,14 +22,16 @@ export const Navigation = () => {
           <TopNavMenu />
         </Container>
       </Inner>
-      <Box className="md:hidden flex justify-between px-4 bg-green-800 text-center text-white text-sm py-2 items-center font-bold bg-clip-padding backdrop-filter backdrop-blur-xl opacity-90">
-        <p>아임웹 사이트제작 가격할인 이벤트 진행중!</p>
-        <Link href={"/pricing"} className="text-sm">
-          <Badge colorScheme="green" className="opacity-[80%]">
-            자세히보기
-          </Badge>
-        </Link>
-      </Box>
+      <Inner>
+        <Box className="lg:hidden flex justify-between px-4 bg-green-800 text-center text-white text-sm py-2 items-center font-bold bg-clip-padding backdrop-filter backdrop-blur-xl opacity-90">
+          <p>아임웹 사이트제작 가격할인 이벤트 진행중!</p>
+          <Link href={"/pricing"} className="text-sm">
+            <Badge colorScheme="green" className="opacity-[80%]">
+              자세히보기
+            </Badge>
+          </Link>
+        </Box>
+      </Inner>
     </Section>
   );
 };

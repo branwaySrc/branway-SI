@@ -15,12 +15,13 @@ import { Badge } from "@chakra-ui/react";
 import { EmailToast } from "@/components/acquire/emailToast";
 import { MdChevronRight } from "react-icons/md";
 import { KakaoPopover } from "@/components/acquire/kakaoPopover";
+import ClosingSection from "@/components/ClosingSection";
 
 const AcquirePage = () => {
   return (
-    <Section className="min-h-[85vh]">
+    <Section className="min-h-[85vh] bg-zinc-950 mt-[100px] lg:mt-0">
       <Inner>
-        <Container className="flex flex-col items-center border-[1px] border-[#FFFFFF30] px-2 py-10 mt-10 md:mt-0 bg-neutral-950">
+        <Container className="flex flex-col items-center border-[1px] border-[#FFFFFF30] px-2 py-10 mt-10 lg:mt-0 bg-neutral-950">
           <Title className=" font-bold text-neutral-400 text-center">
             고객문의센터
           </Title>
@@ -28,7 +29,7 @@ const AcquirePage = () => {
             무엇을 도와드릴까요?
           </Text>
         </Container>
-        <Container className="flex w-full ">
+        <Container className="flex w-full bg-black">
           <Box className="border-[1px] border-t-transparent border-r-transparent border-[#FFFFFF30] w-full py-10 pl-6">
             <Title className="font-bold text-2xl">
               <Image
@@ -111,7 +112,7 @@ const AcquirePage = () => {
               <Badge colorScheme="blue">FAQ</Badge>
             </Box>
           </Container>
-          <Container className="border-[1px] border-[#FFFFFF30] border-t-transparent">
+          <Container className="border-[1px] border-[#FFFFFF30] border-t-transparent bg-black">
             <FaqList
               tabOne={{
                 title: "브랜웨이와 실시간 전화 상담을 하고 싶어요.",
@@ -142,6 +143,7 @@ const AcquirePage = () => {
                 desc: "아임웹에 직접 들어가세요.",
               }}
             />
+            <ClosingSection />
           </Container>
         </Section>
       </Inner>

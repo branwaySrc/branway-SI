@@ -130,8 +130,6 @@ export const DrawerPopUp = () => {
                   </CarouselItem>
                 </>
               </CarouselContent>
-              <CarouselPrevious className="ml-8 sm:hidden" />
-              <CarouselNext className="mr-8 sm:hidden" />
             </Carousel>
           </DrawerBody>
           <DrawerFooter className="bg-stone-950 text-neutral-300 z-10 h-14">
