@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { NotoSans } from "@/manager/lib/@";
+import { NotoSans, Section } from "@/manager/lib/@";
 import { ChakraProvider } from "@/manager/provider/chakraProvider";
 import { Footer } from "@/components/footer/Footer";
 
@@ -24,11 +24,16 @@ export default function RootLayout({
       <body className={`${NotoSans.className} bg-black`}>
         <ChakraProvider>
           <Wrapper className="overflow-hidden lg:grid lg:grid-cols-2">
-            <div className="hidden lg:inline-flex lg:w-[100vw] relative lg:flex-wrap lg:min-h-[100vh]">
+            <Section
+              breakClass={{
+                lg: "lg:inline-flex lg:w-[100vw] lg:flex-wrap lg:min-h-[100vh]",
+              }}
+              className="hidden relative"
+            >
               <div className="fixed">
                 <LayoutHero />
               </div>
-            </div>
+            </Section>
             <div className="lg:min-h-[100vh] relative">
               <Navigation />
               <BreadMenu />

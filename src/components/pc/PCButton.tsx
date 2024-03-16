@@ -9,7 +9,10 @@ export default function PCButton() {
       >
         카카오채널 문의
       </Link>
-      <Link href={"/acquire"} className="px-4 py-2 text-sm">
+      <Link
+        href={"/acquire"}
+        className="px-4 py-2 text-sm text-neutral-400 hover:text-white"
+      >
         고객센터 바로가기
       </Link>
     </div>

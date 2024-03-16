@@ -3,13 +3,13 @@ import CircleAnimation from "@/components/animate/CircleAnimation";
 import Image from "next/image";
 import { LuHeartHandshake } from "react-icons/lu";
 import Link from "next/link";
-import { Badge } from "@chakra-ui/react";
+import BusinessItemCard from "./business-section/BusinessItemCard";
 
 export default function HeroSection() {
   return (
-    <Section className="flex items-center justify-center lg:hidden mt-[100px] border-[1px] border-t-transparent border-[#FFFFFF30]">
+    <Section className="flex items-center justify-center lg:hidden mt-[100px]">
       <CircleAnimation
-        layout="absolute ml-[100px]"
+        layout="absolute ml-[100px] top-[340px]"
         className={{
           first: "bg-sky-700 h-[80px] w-[180px] blur-3xl",
           second: "bg-slate-600 h-[150px] w-[80px] blur-3xl",
@@ -46,12 +46,15 @@ export default function HeroSection() {
             </Link>
           </div>
         </Section>
-
+        <>
+          <BusinessItemCard className="flex flex-col gap-7 px-4 mx-4" />
+          <div className="border-b-[1px] w-full border-[#FFFFFF30] my-20 border-dashed" />
+        </>
         <Title className="font-bold flex gap-2 items-center justify-center">
           <LuHeartHandshake color="#FFFFFF30" />
           브랜웨이 파트너
         </Title>
-        <Text className="text-center text-neutral-400 text-xs mt-2">
+        <Text className="text-center text-neutral-400 text-sm mt-2">
           브랜웨이는 파트너분들과 지속적인 협업을 중시합니다.
         </Text>
         <Section className="grid grid-cols-3 w-[100vw] px-5 relative mt-5">
