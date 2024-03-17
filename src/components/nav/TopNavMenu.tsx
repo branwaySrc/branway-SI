@@ -80,7 +80,7 @@ export const TopNavMenu = () => {
         </MenuItem>
 
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link prefetch={false} href={"/acquire"}>
+          <Link prefetch={false} href={"/customer-service"}>
             문의하기
           </Link>
         </MenuItem>

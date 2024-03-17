@@ -9,9 +9,9 @@ export default function GovernSection() {
           <Badge variant="outline">지원마감</Badge>
         </div>
         <h1 className="font-bold text-xl text-center">
-          정부지원금을 가로채는 방법
+          정부지원금을 위한 Starter 패키지
           <br />
-          서비스 템플릿(앱,웹) 소스로 시작하세요.
+          프로토타입부터 기획안 및 사업계획서까지
         </h1>
       </div>
     </section>

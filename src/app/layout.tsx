@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import { NotoSans, Section } from "@/manager/lib/@";
 import { ChakraProvider } from "@/manager/provider/chakraProvider";
 import { Footer } from "@/components/footer/Footer";
-
-import "./globals.css";
 import { Wrapper } from "@/manager/lib/@";
+import "./globals.css";
+
 import { Navigation } from "@/components/nav/Navigation";
 import LayoutHero from "@/components/pc/LayoutHero";
 import BreadMenu from "@/components/pc/BreadMenu";
+import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "브랜웨이",
@@ -38,6 +39,7 @@ export default function RootLayout({
               <Navigation />
               <BreadMenu />
               {children}
+              <Analytics />
               <Footer />
             </div>
           </Wrapper>

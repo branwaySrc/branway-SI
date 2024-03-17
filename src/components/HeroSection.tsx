@@ -4,6 +4,7 @@ import Image from "next/image";
 import { LuHeartHandshake } from "react-icons/lu";
 import Link from "next/link";
 import BusinessItemCard from "./business-section/BusinessItemCard";
+import PartnerList from "./PartnerList";
 
 export default function HeroSection() {
   return (
@@ -50,113 +51,7 @@ export default function HeroSection() {
           <BusinessItemCard className="flex flex-col gap-7 px-4 mx-4" />
           <div className="border-b-[1px] w-full border-[#FFFFFF30] my-20 border-dashed" />
         </>
-        <Title className="font-bold flex gap-2 items-center justify-center">
-          <LuHeartHandshake color="#FFFFFF30" />
-          브랜웨이 파트너
-        </Title>
-        <Text className="text-center text-neutral-400 text-sm mt-2">
-          브랜웨이는 파트너분들과 지속적인 협업을 중시합니다.
-        </Text>
-        <Section className="grid grid-cols-3 w-[100vw] px-5 relative mt-5">
-          <div className="bg-gradient-to-r via-transparent from-black w-[80%] h-full absolute top-0 left-0 ml-5" />
-          <div className="bg-gradient-to-l via-transparent from-black w-[80%] h-full absolute top-0 right-0 mr-5" />
-          <Box className="border-[1px] border-b-[0px] border-r-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/TIMEBLUE.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-0 border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/Manrochon.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-[0px] border-l-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/metalux.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-[0px] border-r-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/enuri.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-0 border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/cicon.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-[0px] border-l-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/film.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-[0px] border-r-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/LUXAGAIN.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-0 border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/PHYSIQUE.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-[0px] border-l-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/mj.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-[0px] border-r-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/mj.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/mj.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-          <Box className="border-[1px] border-b-[0px] border-l-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-            <Image
-              alt="partner logo"
-              src={"/partners/mj.png"}
-              width={100}
-              height={15}
-            />
-          </Box>
-        </Section>
+        <PartnerList />
       </Container>
     </Section>
   );

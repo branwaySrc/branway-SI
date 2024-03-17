@@ -20,7 +20,7 @@ export default function BreadMenu() {
     home: "/",
     imweb: "/imweb",
     pricing: "/pricing",
-    acquire: "/acquire",
+    customerService: "/customer-service",
   };
 
   return (
@@ -35,7 +35,10 @@ export default function BreadMenu() {
         <Link href={url.pricing} className={handleMenuStyle(url.pricing)}>
           가격정책
         </Link>
-        <Link href={url.acquire} className={handleMenuStyle(url.acquire)}>
+        <Link
+          href={url.customerService}
+          className={handleMenuStyle(url.customerService)}
+        >
           문의하기
         </Link>
       </ol>
