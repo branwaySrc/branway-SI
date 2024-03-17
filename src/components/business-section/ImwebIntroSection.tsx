@@ -21,7 +21,7 @@ export default function ImwebIntroSection() {
           <section className="flex gap-2 my-2">
             <Tags />
           </section>
-          <p className="text-sm text-neutral-400 leading-6">
+          <p className="text-sm text-neutral-400 leading-6 z-30">
             <span className="text-white text-base">
               쇼핑몰 창업, 브랜드 런칭, 회사소개를 위한 홈페이지가 필요하신가요?
             </span>
@@ -34,7 +34,7 @@ export default function ImwebIntroSection() {
           </p>
         </div>
       </article>
-      <section className="relative overflow-hidden w-full h-[700px] block mt-[-80px] sm:mt-0">
+      <section className="relative overflow-hidden w-full h-[700px] block mt-[-20px] sm:mt-0">
         <Image src={"/imweb/imweb_solution_image.svg"} alt="imweb" fill />
         <div className="bg-gradient-to-t to-transparent via-[#05050580] from-[#050505] w-full h-[40%] absolute z-10 bottom-0" />
         <Link

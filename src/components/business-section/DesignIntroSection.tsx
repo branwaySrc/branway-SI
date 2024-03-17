@@ -33,7 +33,7 @@ export default function DesignIntroSection() {
         </div>
       </article>
       <section className="relative overflow-hidden w-full h-[700px] block mt-[-80px] sm:mt-0">
-        <Image src={"/imweb/imweb_solution_image.svg"} alt="imweb" fill />
+        <Image src={"/service/design_solution.svg"} alt="imweb" fill />
         <div className="bg-gradient-to-t to-transparent via-[#05050580] from-[#050505] w-full h-[40%] absolute z-10 bottom-0" />
         <Link
           href={"/imweb"}

@@ -19,7 +19,7 @@ export default function GovernSection() {
           <section className="flex gap-2 my-2">
             <Tags />
           </section>
-          <p className="text-sm text-neutral-400 leading-6">
+          <p className="text-sm text-neutral-400 leading-6 z-30">
             <span className="text-white text-base">
               혹시, 플랫폼이나 서비스 창업을 위해 정부지원사업을 준비
               중이신가요?
@@ -33,8 +33,14 @@ export default function GovernSection() {
           </p>
         </div>
       </article>
-      <section className="relative overflow-hidden w-full h-[700px] block mt-[-80px] sm:mt-0">
-        <Image src={"/imweb/imweb_solution_image.svg"} alt="imweb" fill />
+      <section className="relative overflow-hidden w-full h-[600px] block mt-[-80px] sm:mt-0">
+        <div className="absolute bg-gradient-to-b via-[#050505] from-[#050505] h-[50%] w-full z-10" />
+        <Image
+          src={"/service/govern_solution.svg"}
+          alt="imweb"
+          fill
+          style={{ objectFit: "cover" }}
+        />
         <div className="bg-gradient-to-t to-transparent via-[#05050580] from-[#050505] w-full h-[40%] absolute z-10 bottom-0" />
         <Link
           href={"/imweb"}

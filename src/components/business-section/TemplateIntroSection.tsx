@@ -19,7 +19,7 @@ export default function TemplateIntroSection() {
           <section className="flex gap-2 my-2">
             <Tags />
           </section>
-          <p className="text-sm text-neutral-400 leading-6">
+          <p className="text-sm text-neutral-400 leading-6 z-30">
             <span className="text-white text-base">
               어플리케이션 서비스를 개발하실 예정이신가요?
             </span>
@@ -33,8 +33,22 @@ export default function TemplateIntroSection() {
         </div>
       </article>
       <section className="relative overflow-hidden w-full h-[700px] block mt-[-80px] sm:mt-0">
-        <Image src={"/imweb/imweb_solution_image.svg"} alt="imweb" fill />
-        <div className="bg-gradient-to-t to-transparent via-[#05050580] from-[#050505] w-full h-[40%] absolute z-10 bottom-0" />
+        <Image
+          className="absolute right-0 top-14 z-10"
+          src={"/service/template_solution.svg"}
+          alt="template solution"
+          height={440}
+          width={440}
+        />
+        <Image
+          className="absolute top-0"
+          src={"/service/templategif.gif"}
+          alt="template solution"
+          fill
+          style={{ objectFit: "cover" }}
+        />
+        <div className="bg-gradient-to-t to-transparent via-[#05050580] from-[#050505] w-full h-[80%] absolute  bottom-0 z-10" />
+        <div className="bg-gradient-to-b to-transparent via-[#05050580] from-[#050505] w-full h-[80%] absolute  top-0 z-0" />
         <Link
           href={"/imweb"}
           className="absolute font-bold hover:border-[#FFFFFF] text-center bottom-0 w-[90%] max-w-[450px] py-4 bg-black rounded-xl border-[1px] border-[#FFFFFF30] inset-x-0 left-1/2 -translate-x-1/2 z-10"

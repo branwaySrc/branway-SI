@@ -17,7 +17,16 @@ import { GoCodespaces } from "react-icons/go";
 import { TbBellCode } from "react-icons/tb";
 
 const ToggleBtnShiftSheet: React.FC = () => {
+  const [openSheet, setOpenSheet] = useState(false);
   const [view, setView] = useState(true);
+
+  const handleSheet = () => {
+    if (openSheet === false) {
+      setOpenSheet(true);
+    } else {
+      setOpenSheet(false);
+    }
+  };
 
   const handleClick = (e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
     const target = e.target as HTMLInputElement;
@@ -62,14 +71,34 @@ const ToggleBtnShiftSheet: React.FC = () => {
           </div>
         </div>
       </section>
-      {view ? <WhenNotUse /> : <WhenUse />}
+      {view ? (
+        <WhenNotUse onClick={handleSheet} openSheet={openSheet} />
+      ) : (
+        <WhenUse onClick={handleSheet} openSheet={openSheet} />
+      )}
     </>
   );
 };
 
-function WhenUse() {
+function WhenUse(props: { openSheet?: boolean; onClick?: () => void }) {
+  const handleItems = () => {
+    if (props.openSheet === false) {
+      return "hidden";
+    } else {
+      return "block";
+    }
+  };
+  const controller = handleItems();
   return (
-    <>
+    <section className="relative">
+      <div className="absolute w-full flex flex-col items-center bottom-0">
+        <button
+          onClick={props.onClick}
+          className="block py-4 w-[60%] text-center text-sm font-bold bg-black border-[1px] rounded-lg border-[#FFFFFF30] hover:border-white mb-[-100px] z-20 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80"
+        >
+          {!props.openSheet ? "비교 자세히보기" : "자세히보기 닫기"}
+        </button>
+      </div>
       <Container className="px-6 mt-14 relative">
         <Box className="border-[1px] border-neutral-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
           <FiCoffee size={24} />
@@ -108,7 +137,7 @@ function WhenUse() {
         </Box>
       </Container>
 
-      <Container className="px-6 mt-14 relative">
+      <Container className={`px-6 mt-14 relative ${controller}`}>
         <Box className="border-[1px] border-neutral-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
           <MdOutlineCloudDone size={24} />
         </Box>
@@ -124,7 +153,7 @@ function WhenUse() {
         </Box>
       </Container>
 
-      <Container className="px-6 mt-14 relative">
+      <Container className={`px-6 mt-14 relative ${controller}`}>
         <Box className="border-[1px] border-neutral-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
           <IoChatbubbleEllipsesOutline size={24} />
         </Box>
@@ -146,7 +175,7 @@ function WhenUse() {
         />
       </Container>
 
-      <Container className="px-6 mt-14 relative">
+      <Container className={`px-6 mt-14 relative ${controller}`}>
         <Box className="border-[1px] border-neutral-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
           <BsShop size={22} />
         </Box>
@@ -161,13 +190,31 @@ function WhenUse() {
           </Text>
         </Box>
       </Container>
-    </>
+      <div className="h-10" />
+    </section>
   );
 }
 
-function WhenNotUse() {
+function WhenNotUse(props: { openSheet?: boolean; onClick?: () => void }) {
+  const handleItems = () => {
+    if (props.openSheet === false) {
+      return "hidden";
+    } else {
+      return "block";
+    }
+  };
+  const controller = handleItems();
+
   return (
-    <>
+    <section className="relative">
+      <div className="absolute w-full flex flex-col items-center bottom-0">
+        <button
+          onClick={props.onClick}
+          className="block py-4 w-[60%] text-center text-sm font-bold bg-black border-[1px] rounded-lg border-[#FFFFFF30] hover:border-white mb-[-100px] z-20 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80"
+        >
+          {!props.openSheet ? "비교 자세히보기" : "자세히보기 닫기"}
+        </button>
+      </div>
       <Container className="px-6 mt-14 relative">
         <Box className="border-[1px] border-neutral-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
           <FaCode size={24} />
@@ -205,7 +252,7 @@ function WhenNotUse() {
         </Box>
       </Container>
 
-      <Container className="px-6 mt-14 relative">
+      <Container className={`px-6 mt-14 relative ${controller}`}>
         <Box className="border-[1px] border-neutral-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
           <FaQrcode size={24} />
         </Box>
@@ -221,7 +268,7 @@ function WhenNotUse() {
         </Box>
       </Container>
 
-      <Container className="px-6 mt-14 relative">
+      <Container className={`px-6 mt-14 relative ${controller}`}>
         <Box className="border-[1px] border-neutral-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
           <GoCodespaces size={24} />
         </Box>
@@ -243,7 +290,7 @@ function WhenNotUse() {
         />
       </Container>
 
-      <Container className="px-6 mt-14 relative">
+      <Container className={`px-6 mt-14 relative ${controller}`}>
         <Box className="border-[1px] border-neutral-800 rounded-full w-[50px] h-[50px] flex items-center justify-center">
           <TbBellCode size={22} />
         </Box>
@@ -258,7 +305,8 @@ function WhenNotUse() {
           </Text>
         </Box>
       </Container>
-    </>
+      <div className="h-10" />
+    </section>
   );
 }
 
