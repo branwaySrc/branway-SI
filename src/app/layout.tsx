@@ -7,6 +7,7 @@ import "./globals.css";
 import { Navigation } from "@/components/nav/Navigation";
 import LayoutHero from "@/components/pc/LayoutHero";
 import BreadMenu from "@/components/pc/BreadMenu";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 
@@ -39,6 +40,7 @@ export default function RootLayout({
               <Navigation />
               <BreadMenu />
               {children}
+              <SpeedInsights />
               <Analytics />
               <Footer />
             </div>

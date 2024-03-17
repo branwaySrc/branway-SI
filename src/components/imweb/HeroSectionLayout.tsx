@@ -1,11 +1,6 @@
-import {
-  Container,
-  Box,
-  Section,
-  AbsoluteBg,
-  Line,
-} from "@/manager/lib/HTMLElements";
-import CircleAnimation from "@/components/animate/CircleAnimation";
+import { Container, Box, Section, Line } from "@/manager/lib/HTMLElements";
+import Image from "next/image";
+import CircleAnimation from "../animate/CircleAnimation";
 
 interface HeroSectionTm {
   badgeLabel?: string;
@@ -17,43 +12,38 @@ interface HeroSectionTm {
 export const HeroSectionLayout = (props: HeroSectionTm) => {
   return (
     <Section className="border-[1px] border-[#FFFFFF30] bg-[#000000] relative overflow-hidden">
-      <CircleAnimation
-        layout="absolute right-0 top-0"
-        className={{
-          first: "bg-green-500 h-[250px] w-[80px] blur-3xl",
-          second: "bg-blue-500 h-[80px] w-[250px] blur-3xl",
-        }}
+      <Image
+        className="mt-[-100px]"
+        src={"/imweb/imweb_solution_hero.svg"}
+        alt="imweb_hero"
+        fill
+        style={{ objectFit: "cover" }}
       />
       <CircleAnimation
-        layout="absolute right-0 bottom-0 flex-col"
+        layout="absolute top-0 inset-x-0 left-1/2 -translate-x-1/2 z-10"
         className={{
-          first: "bg-green-500 h-[50px] w-[180px] blur-3xl",
-          second: "bg-blue-500 h-[80px] w-[250px] blur-3xl",
+          first: "bg-blue-600 h-[100px] w-[200px] blur-3xl",
+          second: "bg-purple-600 h-[200px] w-[100px] blur-3xl",
         }}
       />
-
-      <Section className="border-[1px] border-[#FFFFFF30] m-5 bg-[#00000050] relative bg-clip-padding backdrop-filter bg-opacity-80">
-        <Section className="z-10 flex flex-col items-center border-[#FFFFFF30] h-[430px] border-[1px] m-7 bg-black bg-opacity-50">
-          <Container className="w-full h-[60%] text-center flex items-center justify-center">
-            {props.badgeLabel && (
-              <Box className="text-sm font-bold bg-gradient-to-r from-blue-600 to-purple-600 inline-block text-transparent bg-clip-text">
-                {props.badgeLabel}
-              </Box>
-            )}
-          </Container>
+      <div className="absolute bg-gradient-to-r from-black left-0 top-0 z-10 w-[50%] h-full" />
+      <div className="absolute bg-gradient-to-l from-black right-0 top-0 z-10 w-[50%] h-full" />
+      <div className="absolute bg-gradient-to-b from-black top-0 z-10 w-full h-[30%]" />
+      <div className="absolute bg-gradient-to-t via-black from-black bottom-0 z-10 w-full h-[80%]" />
+      <Section className="border-[1px] border-[#FFFFFF30] m-5 border-dashed relative bg-clip-padding backdrop-filter bg-opacity-80">
+        <Section className="z-10 flex flex-col items-center border-dashed border-[#FFFFFF30] h-[430px] border-[1px] m-7 ">
           <Container className="flex justify-center w-full h-full items-center">
-            <Box className="font-black text-3xl max-w-[80%] text-center leading-[40px]">
-              {props.title || "Title"}
-            </Box>
-          </Container>
-          <Container className="flex justify-center relative w-full h-full items-center">
-            <Box className="text-slate-400 max-w-[80%] text-center leading-5 text-sm">
-              {props.desc || "desc"}
+            <Box className="font-black text-2xl max-w-[95%] text-center z-20 mt-[200px] flex flex-col gap-2">
+              <h1>
+                온라인을 시작하는 <br /> 아임웹 사이트 제작 솔루션
+              </h1>
+              <p className="text-base text-neutral-400 font-normal">
+                부담없는 비용으로 최적 사이트를 <br />
+                빠르게 제작해 드리는 온라인 창업 솔루션이에요.
+              </p>
             </Box>
           </Container>
         </Section>
-        <Line className="absolute border-t-[1px] border-[#FFFFFF30] w-full h-[75%] bottom-0" />
-        <Line className="absolute border-t-[1px] border-[#FFFFFF30] w-full h-[40%] bottom-0" />
       </Section>
     </Section>
   );
