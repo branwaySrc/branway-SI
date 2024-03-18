@@ -12,7 +12,7 @@ export default function HeroSection() {
       <CircleAnimation
         layout="absolute ml-[100px] top-[340px]"
         className={{
-          first: "bg-sky-700 h-[80px] w-[180px] blur-3xl",
+          first: "bg-green-700 h-[40px] w-[120px] blur-3xl",
           second: "bg-slate-600 h-[150px] w-[80px] blur-3xl",
         }}
       />
@@ -27,12 +27,12 @@ export default function HeroSection() {
           </Box>
           <Image
             alt="branway logo"
-            src={"/logo_branway.png"}
-            width={300}
-            height={100}
+            src={"/branway_icon_dark.svg"}
+            width={120}
+            height={120}
             draggable={false}
           />
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-3 items-center mt-5">
             <Link
               href={"/"}
               className="px-4 py-2 font-bold border-[1px] hover:bg-white hover:text-black border-[#FFFFFF30] rounded-lg"

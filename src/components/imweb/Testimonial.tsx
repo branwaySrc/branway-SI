@@ -58,7 +58,7 @@ export default function Testimonial() {
         <div className="flex flex-col justify-center items-center border-b-[1px] border-[#FFFFFF30] py-10 gap-2">
           <p className="max-w-[80%] text-center">
             <span className="text-white">가격이 저렴해서 의심했었는데, </span>
-            결과물이 너무 만족스러웠고, 빠른런칭을 할 수 있었어요.
+            결과물이 너무 만족스러웠고, 빠르게 가게를 홍보할 수 있었어요.
           </p>
           <p>알워치 &ldquo;명품시계샵&ldquo;</p>
         </div>

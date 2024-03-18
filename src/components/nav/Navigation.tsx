@@ -12,7 +12,7 @@ export const Navigation = () => {
           <Link href={"/"}>
             <Image
               alt="branway logo"
-              src={"/logo_branway.png"}
+              src={"/branway_full_logo.svg"}
               width={100}
               height={20}
             />

@@ -1,6 +1,6 @@
 import { NotoSans, Section } from "@/manager/lib/@";
 import { ChakraProvider } from "@/manager/provider/chakraProvider";
-import { Footer } from "@/components/footer/Footer";
+import { Footer } from "@/components/Footer";
 import { Wrapper } from "@/manager/lib/@";
 import "./globals.css";
 
