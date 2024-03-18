@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ClosingSection() {
   return (
-    <Container className="flex flex-col gap-4 items-center justify-center h-[300px] w-full">
+    <Container className="flex flex-col gap-4 items-center justify-center h-[300px] w-full border-b border-[#FFFFFF30]">
       <Image
         alt="branway logo"
         src={"/logo_branway.png"}

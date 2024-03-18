@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Badge } from "@chakra-ui/react";
 import PCMenu from "./PCMenu";
 import ShortcutButtons from "../ShortcutButtons";
+import { FooterInfo } from "../Footer";
 
 export default function LayoutHero() {
   return (
@@ -28,9 +29,9 @@ export default function LayoutHero() {
             width={300}
             height={100}
           />
-          <Box className="flex flex-col gap-2 ml-1">
+          <Box className="flex flex-col gap-2 ml-1 mb-2">
             <Text className="text-neutral-400">
-              온라인 솔루션 파트너 브랜웨이,
+              온라인 솔루션 파트너 브랜웨이
               <br /> 2024년도를 함께해요!
             </Text>
           </Box>
@@ -42,7 +43,7 @@ export default function LayoutHero() {
               </Badge>
             </Link>
           </Box>
-          <ShortcutButtons />
+          <FooterInfo />
         </Section>
       </Container>
     </Section>

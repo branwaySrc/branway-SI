@@ -36,7 +36,7 @@ export default function RootLayout({
                 <LayoutHero />
               </div>
             </Section>
-            <div className="lg:min-h-[100vh] relative">
+            <div className="relative">
               <Navigation />
               <BreadMenu />
               {children}

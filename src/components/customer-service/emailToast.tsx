@@ -28,6 +28,7 @@ export function EmailToast(props: { children?: React.ReactNode }) {
       color={"#FFFFFF99"}
       _hover={{ bg: "transparent", color: "#FFFFFF" }}
       onClick={handleClick}
+      className="font-normal text-sm"
     >
       {props.children}
     </Button>

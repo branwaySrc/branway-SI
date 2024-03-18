@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function GovernSection() {
   return (
-    <section className="border-t-[1px] w-full mt-20 py-10 border-[#FFFFFF30]">
+    <section className="border-t-[1px] w-full mt-20 py-10 border-[#FFFFFF30] overflow-hidden">
       <article className="flex justify-center">
         <div className="flex flex-col gap-5 mb-10 w-[90%]">
           <div>
