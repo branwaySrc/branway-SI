@@ -5,6 +5,7 @@ import { LuHeartHandshake } from "react-icons/lu";
 import Link from "next/link";
 import BusinessItemCard from "./business-section/BusinessItemCard";
 import PartnerList from "./PartnerList";
+import { CircleLineSet } from "@/components/animate/LineSet";
 
 export default function HeroSection() {
   return (
@@ -18,13 +19,14 @@ export default function HeroSection() {
       />
 
       <Container className="z-10">
-        <Section className="pb-20 my-10 flex flex-col gap-4 items-center border-b-[1px] border-[#FFFFFF30] border-dashed">
+        <Section className="pb-20 my-10 flex flex-col gap-4 items-center border-b-[1px] border-[#FFFFFF30] border-dashed relative">
           <Box className="flex flex-col gap-2 mb-10 py-10 border-y-[1px] border-dashed border-[#FFFFFF30] w-full">
             <Text className="text-neutral-400 text-center font-bold text-xl leading-8">
               <span className="text-white">솔루션 파트너 브랜웨이와 함께,</span>
               <br /> 부담없는 온라인 창업을 시작하세요!
             </Text>
           </Box>
+          <CircleLineSet />
           <Image
             alt="branway logo"
             src={"/branway_icon_dark.svg"}

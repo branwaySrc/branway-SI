@@ -1,0 +1,30 @@
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotation {
+  animation: rotateAnimation 5s linear infinite;
+}
+.animate-rotation {
+  animation: rotateAnimation 8s linear infinite;
+}
+.animate-rotation-2 {
+  animation: rotateAnimation 10s linear infinite;
+}
+
+.animate-rotation-3 {
+  animation: rotateAnimation 15s linear infinite;
+}
+
+.animate-rotation-4 {
+  animation: rotateAnimation 20s linear infinite;
+}
+
+.animate-rotation-5 {
+  animation: rotateAnimation 30s linear infinite;
+}

@@ -5,6 +5,7 @@ import TemplateIntroSection from "@/components/business-section/TemplateIntroSec
 import ImwebIntroSection from "@/components/business-section/ImwebIntroSection";
 import PCHeroSection from "@/components/pc/PCHeroSection";
 import GovernSection from "@/components/business-section/GovernSection";
+
 export default function Home() {
   return (
     <main className="bg-[#050505] px-2 min-h-[100vh]">
