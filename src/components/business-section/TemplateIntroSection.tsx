@@ -24,7 +24,7 @@ export default function TemplateIntroSection() {
               어플리케이션 서비스를 개발하실 예정이신가요?
             </span>
             <br />
-            <span className="mt-2 block">
+            <span className="mt-2 block max-w-[500px]">
               Expo 환경에서 바로 앱스토어 / 플레이스토어에 등록이 가능한 앱 소스
               템플릿을 구매해서 바로 서비스를 시작하세요. 개발에 필요한
               패치노트와 라이브러리 의존성이 낮은 클린코드를 제공합니다.

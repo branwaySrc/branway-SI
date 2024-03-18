@@ -24,7 +24,7 @@ export default function DesignIntroSection() {
               눈에 띄는 매체소개서나 사업계획서가 필요하신가요?
             </span>
             <br />
-            <span className="mt-2 block">
+            <span className="mt-2 block max-w-[500px]">
               가독성이 높고, 중요한 핵심을 사로잡는 디자인 강조로 눈을
               사로잡아보세요! 다양한 표현력으로 내 사업, 서비스, 상품을 매력있게
               만들어 드려요.

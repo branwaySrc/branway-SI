@@ -25,7 +25,7 @@ export default function GovernSection() {
               중이신가요?
             </span>
             <br />
-            <span className="mt-2 block">
+            <span className="mt-2 block max-w-[500px]">
               내 사업을 보여줄 수 있는 앱 프로토타입부터, 개발에 필요한 기획안,
               디자인, 그리고 디자인된 계획서와 사이트 플러스+ 아이덴티티
               확립까지! 사업에 필요한 스타트를 함께 만들어요!

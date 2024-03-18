@@ -4,10 +4,10 @@ import "./LineSet.css";
 export const CircleLineSet = () => {
   return (
     <div
-      className="h-[100%] w-[450px] flex flex-nowrap items-center justify-center overflow-hidden z-[-1] "
+      className="h-[90%] w-[450px] flex flex-nowrap items-center justify-center overflow-hidden z-[-1] "
       style={{
         position: "absolute",
-        top: "54%",
+        top: "55%",
         left: "50.5%",
         transform: "translate(-50%, -50%)",
       }}
