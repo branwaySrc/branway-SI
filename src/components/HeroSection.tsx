@@ -1,15 +1,16 @@
 import { Box, Container, Section, Text, Title } from "@/manager/lib/@";
 import CircleAnimation from "@/components/animate/CircleAnimation";
 import Image from "next/image";
-import { LuHeartHandshake } from "react-icons/lu";
-import Link from "next/link";
 import BusinessItemCard from "./business-section/BusinessItemCard";
 import PartnerList from "./PartnerList";
 import { CircleLineSet } from "@/components/animate/LineSet";
 
-export default function HeroSection() {
+export default function HeroSection(props: {
+  children?: React.ReactNode;
+  className?: string;
+}) {
   return (
-    <Section className="flex items-center justify-center lg:hidden mt-[100px]">
+    <Section className="flex items-center justify-center mt-[100px] lg:mt-0">
       <CircleAnimation
         layout="absolute ml-[100px] top-[340px]"
         className={{
@@ -34,20 +35,7 @@ export default function HeroSection() {
             height={120}
             draggable={false}
           />
-          <div className="flex gap-3 items-center mt-5">
-            <Link
-              href={"/"}
-              className="px-4 py-2 font-bold border-[1px] hover:bg-white hover:text-black border-[#FFFFFF30] rounded-lg"
-            >
-              카카오채널 문의
-            </Link>
-            <Link
-              href={"/acquire"}
-              className="px-4 py-2 text-sm text-neutral-400 hover:text-white"
-            >
-              고객센터 바로가기
-            </Link>
-          </div>
+          <>{props.children}</>
         </Section>
         <>
           <BusinessItemCard className="flex flex-col gap-7 px-4 mx-4" />

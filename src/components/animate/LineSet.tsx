@@ -4,7 +4,7 @@ import "./LineSet.css";
 export const CircleLineSet = () => {
   return (
     <div
-      className="h-[400px] w-[450px] flex flex-nowrap items-center justify-center overflow-hidden z-[-1] "
+      className="h-[100%] w-[450px] flex flex-nowrap items-center justify-center overflow-hidden z-[-1] "
       style={{
         position: "absolute",
         top: "54%",

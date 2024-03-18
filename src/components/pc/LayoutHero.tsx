@@ -5,7 +5,7 @@ import { LuHeartHandshake } from "react-icons/lu";
 import Link from "next/link";
 import { Badge } from "@chakra-ui/react";
 import PCMenu from "./PCMenu";
-import PCButton from "./PCButton";
+import ShortcutButtons from "../ShortcutButtons";
 
 export default function LayoutHero() {
   return (
@@ -13,8 +13,8 @@ export default function LayoutHero() {
       <CircleAnimation
         layout="absolute ml-[100px]"
         className={{
-          first: "bg-sky-700 h-[80px] w-[180px] blur-3xl",
-          second: "bg-slate-600 h-[150px] w-[80px] blur-3xl",
+          first: "bg-blue-900 h-[180px] w-[180px] blur-3xl opacity-80",
+          second: "bg-slate-700 h-[150px] w-[180px] blur-3xl opacity-80",
         }}
       />
       <Container className="pl-10 z-10 w-full">
@@ -42,7 +42,7 @@ export default function LayoutHero() {
               </Badge>
             </Link>
           </Box>
-          <PCButton />
+          <ShortcutButtons />
         </Section>
       </Container>
     </Section>
