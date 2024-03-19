@@ -16,8 +16,8 @@ export default function BusinessItemCard(props: { className?: string }) {
       <section className="border-[1px] border-[#FFFFFF30] rounded-2xl p-2 w-full hover:border-[#FFFFFF70] border-dashed">
         <div className="flex flex-col rounded-lg justify-between bg-gradient-to-r from-black to-neutral-950 hover:to-neutral-900 h-[230px] border-[#FFFFFF10] border-[1px] p-4">
           <Image
-            height={20}
             width={80}
+            height={20}
             src={"/imweb_transparent.png"}
             alt="imweb"
           />

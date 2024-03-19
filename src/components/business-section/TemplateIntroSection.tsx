@@ -41,6 +41,7 @@ export default function TemplateIntroSection() {
           width={440}
         />
         <Image
+          unoptimized
           className="absolute top-0"
           src={"/service/templategif.gif"}
           alt="template solution"

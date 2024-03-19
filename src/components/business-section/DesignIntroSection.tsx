@@ -5,7 +5,9 @@ import Link from "next/link";
 
 export default function DesignIntroSection() {
   return (
+
     <section className="border-t-[1px] w-full mt-20 py-10 border-[#FFFFFF30] overflow-hidden">
+
       <article className="flex justify-center">
         <div className="flex flex-col gap-5 mb-10 w-[90%]">
           <div>
@@ -32,9 +34,10 @@ export default function DesignIntroSection() {
           </p>
         </div>
       </article>
+
       <section className="relative overflow-hidden w-full h-[700px] block mt-[-80px] sm:mt-0">
         <Image src={"/service/design_solution.svg"} alt="imweb" fill />
-        <div className="bg-gradient-to-t to-transparent via-[#05050580] from-[#050505] w-full h-[40%] absolute z-10 bottom-0" />
+        <div className="bg-gradient-to-t to-transparent via-[#00000099] from-[#000000] w-full h-[40%] absolute z-10 bottom-0" />
         <Link
           href={"/imweb"}
           className="absolute font-bold hover:border-[#FFFFFF] text-center bottom-0 w-[90%] max-w-[450px] py-4 bg-black rounded-xl border-[1px] border-[#FFFFFF30] inset-x-0 left-1/2 -translate-x-1/2 z-10"
@@ -43,7 +46,8 @@ export default function DesignIntroSection() {
         </Link>
       </section>
     </section>
-  );
+
+);
 }
 
 function Tags() {

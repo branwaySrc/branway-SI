@@ -25,9 +25,9 @@ export default function LayoutHero() {
         <Section className="my-10 flex flex-col gap-4">
           <Image
             alt="branway logo"
-            src={"/branway_full_logo.svg"}
+            src={"/branway_full_logo.png"}
             width={300}
-            height={100}
+            height={67}
           />
           <Box className="flex flex-col gap-2 ml-1 mb-2">
             <Text className="text-neutral-400">

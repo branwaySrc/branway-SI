@@ -30,9 +30,9 @@ export default function HeroSection(props: {
           <CircleLineSet />
           <Image
             alt="branway logo"
-            src={"/branway_icon_dark.svg"}
-            width={120}
-            height={120}
+            src={"/logo.png"}
+            width={160}
+            height={143}
             draggable={false}
           />
           <>{props.children}</>
