@@ -100,33 +100,6 @@ export default function PartnerList() {
             height={15}
           />
         </Box>
-
-        <Box className="border-[1px] border-b-[0px] border-r-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-          <Image
-            alt="partner logo"
-            src={"/partners/mj.png"}
-            width={100}
-            height={15}
-          />
-        </Box>
-
-        <Box className="border-[1px] border-b-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-          <Image
-            alt="partner logo"
-            src={"/partners/mj.png"}
-            width={100}
-            height={15}
-          />
-        </Box>
-
-        <Box className="border-[1px] border-b-[0px] border-l-[0px] border-[#FFFFFF10] flex items-center justify-center p-5">
-          <Image
-            alt="partner logo"
-            src={"/partners/mj.png"}
-            width={100}
-            height={15}
-          />
-        </Box>
       </Section>
     </div>
   );

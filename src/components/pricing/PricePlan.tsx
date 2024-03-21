@@ -5,6 +5,7 @@ import { IoPricetagOutline } from "react-icons/io5";
 import { FaRegNoteSticky } from "react-icons/fa6";
 import { Badge } from "@chakra-ui/react";
 import Image from "next/image";
+import ClosingSection from "../ClosingSection";
 
 export default function PricePlan() {
   const currentDate = new Date(Date.now());
@@ -163,6 +164,7 @@ export default function PricePlan() {
           </RequirementsLayout>
         </PricingLayout>
       </Container>
+      <ClosingSection />
     </Section>
   );
 }

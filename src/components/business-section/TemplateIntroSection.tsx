@@ -58,7 +58,7 @@ export default function TemplateIntroSection() {
           템플릿 소스 구매 바로가기
         </Link> */}
         <UnderConstructToast
-          innerText="해당 솔루션은 출시 예정 중이에요! 현재 프레임워크 변경에 따른 일괄 점검중에 있습니다. 빠른 시일내에 다시 출시될 수 있도록 노력하겠습니다."
+          innerText="해당 솔루션은 출시 예정 중이에요! 현재 프레임워크 변경에 따른 일괄 점검중에 있습니다. 빠른 시일 내에 다시 출시될 수 있도록 노력하겠습니다."
           className="absolute bottom-0 font-bold block hover:border-[#FFFFFF] text-center w-[90%] max-w-[450px] py-4 bg-black rounded-xl border-[1px] border-[#FFFFFF30] inset-x-0 left-1/2 -translate-x-1/2 z-10"
         >
           템플릿 소스 구매 바로가기
