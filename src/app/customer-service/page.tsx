@@ -18,7 +18,7 @@ import ClosingSection from "@/components/ClosingSection";
 
 const AcquirePage = () => {
   return (
-    <Section className="min-h-[85vh] bg-zinc-950 mt-[100px] lg:mt-0">
+    <Section className="min-h-[85vh] bg-[#050505] mt-[100px] lg:mt-0">
       <Inner>
         <Container className="flex flex-col items-center justify-center border-[1px] border-[#FFFFFF30] px-2 py-10 mt-10 lg:mt-0 bg-neutral-950 lg:h-[250px] gap-3">
           <Title className="text-2xl text-center mt-2 font-bold">

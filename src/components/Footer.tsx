@@ -1,10 +1,8 @@
 import {
   Text,
   Box,
-  Title,
   Container,
   Section,
-  Line,
   Inner,
 } from "@custom-syntax/HTMLElements";
 
@@ -24,10 +22,9 @@ export const Footer = () => {
 };
 
 export const FooterInfo = () => {
-  const DateOfYear = new Date().getFullYear();
   return (
     <Container className="flex flex-col gap-1 text-sm mt-4 ml-1">
-      <Text className="font-bold">고객 센터 : 0504-4587-7412</Text>
+      <Text className="font-bold">전화하기 : 010-2451-7412</Text>
       <Text className="font-bold">이메일 : contact@branway.kr</Text>
       <Box className="flex flex-col gap-1 text-neutral-500 mt-2">
         <Text>대표자 : 김민기</Text>

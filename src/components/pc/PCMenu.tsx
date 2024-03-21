@@ -41,7 +41,7 @@ export default function PCMenu() {
             href={"/imweb"}
             className="flex items-center gap-2"
           >
-            <p>아임웹 제작 서비스</p>
+            <p>아임웹 제작 솔루션</p>
             <Badge variant="outline" colorScheme="green">
               이벤트중
             </Badge>
@@ -54,7 +54,7 @@ export default function PCMenu() {
             href={"/"}
             className="text-[#FFFFFF50] flex items-center gap-2"
           >
-            <p>소개서 디자인 서비스</p>
+            <p>디자인 솔루션</p>
             <Badge variant="outline">출시예정</Badge>
           </Link>
         </MenuItem>
@@ -64,7 +64,7 @@ export default function PCMenu() {
             href={"/pricing"}
             className="text-[#FFFFFF50] flex items-center gap-2"
           >
-            <p>자체 개발 서비스</p>
+            <p>템플릿 소스 솔루션</p>
             <Badge variant="outline">출시예정</Badge>
           </Link>
         </MenuItem>
@@ -75,7 +75,7 @@ export default function PCMenu() {
             href={"/"}
             className="text-[#FFFFFF50] flex items-center gap-2"
           >
-            <p>정부지원 컨설팅 서비스</p>
+            <p>창업패키지 솔루션</p>
             <Badge variant="outline">지원마감</Badge>
           </Link>
         </MenuItem>

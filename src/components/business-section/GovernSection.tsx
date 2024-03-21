@@ -2,6 +2,7 @@ import React from "react";
 import { Badge } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import UnderConstructToast from "../UnderConstructToast";
 
 export default function GovernSection() {
   return (
@@ -34,20 +35,26 @@ export default function GovernSection() {
         </div>
       </article>
       <section className="relative overflow-hidden w-full h-[600px] block mt-[-80px] sm:mt-0">
-        <div className="absolute bg-gradient-to-b via-[#050505] from-[#050505] h-[50%] w-full z-10" />
+        <div className="absolute bg-gradient-to-b via-[#000000] from-[#000000] h-[50%] w-full z-10" />
         <Image
           src={"/service/govern_solution.svg"}
           alt="imweb"
           fill
           style={{ objectFit: "cover" }}
         />
-        <div className="bg-gradient-to-t to-transparent via-[#05050580] from-[#050505] w-full h-[40%] absolute z-10 bottom-0" />
-        <Link
+        <div className="bg-gradient-to-t to-transparent via-[#00000080] from-[#000000] w-full h-[40%] absolute z-10 bottom-0" />
+        {/* <Link
           href={"/imweb"}
           className="absolute font-bold hover:border-[#FFFFFF] text-center bottom-0 w-[90%] max-w-[450px] py-4 bg-black rounded-xl border-[1px] border-[#FFFFFF30] inset-x-0 left-1/2 -translate-x-1/2 z-10"
         >
           창업패키지 솔루션 바로가기
-        </Link>
+        </Link> */}
+        <UnderConstructToast
+          innerText="해당 솔루션은 지원이 마감되었습니다. 매년 10월 부터 모집을 진행 중에 있습니다. 많은 관심 바랍니다!"
+          className="absolute bottom-0 font-bold block hover:border-[#FFFFFF] text-center w-[90%] max-w-[450px] py-4 bg-black rounded-xl border-[1px] border-[#FFFFFF30] inset-x-0 left-1/2 -translate-x-1/2 z-10"
+        >
+          창업패키지 솔루션 바로가기
+        </UnderConstructToast>
       </section>
     </section>
   );

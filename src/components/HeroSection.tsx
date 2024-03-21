@@ -10,7 +10,7 @@ export default function HeroSection(props: {
   className?: string;
 }) {
   return (
-    <Section className="flex items-center justify-center mt-[100px] lg:mt-0">
+    <Section className="flex mt-[100px] lg:mt-0">
       <CircleAnimation
         layout="absolute ml-[100px] top-[340px]"
         className={{
@@ -19,7 +19,7 @@ export default function HeroSection(props: {
         }}
       />
 
-      <Container className="z-10 ">
+      <Container className="z-10 w-full">
         <Section className="pb-20 my-10 flex flex-col gap-4 items-center border-b-[1px] border-[#FFFFFF30] border-dashed relative bg-black z-[-99] w-full">
           <Box className="flex flex-col gap-2 mb-10 py-10 border-y-[1px] border-dashed border-[#FFFFFF30] w-full ">
             <Text className="text-neutral-400 text-center font-bold text-xl leading-8">

@@ -16,7 +16,7 @@ export default function ProjectFAQ() {
         <Text className="text-neutral-400 max-w-[80%] text-center leading-6">
           혹시, 궁금증이 해결되지 않으셨나요?
           <br />
-          <Link href={"/acquire"} className="text-blue-500">
+          <Link href={"/customer-service"} className="text-blue-500">
             문의하기
           </Link>
         </Text>

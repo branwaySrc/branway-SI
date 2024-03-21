@@ -10,8 +10,8 @@ import ClosingSection from "@/components/ClosingSection";
 
 export default function Home() {
   return (
-    <main className="bg-[#000000] px-2 min-h-[100vh]">
-      <div className="border-x border-[#FFFFFF30]">
+    <main className="bg-[#000000] min-h-[100vh]">
+      <div className="border-x mx-6 border-[#FFFFFF30]">
         <HeroSection>
           <ShortcutButtons />
         </HeroSection>
@@ -19,7 +19,7 @@ export default function Home() {
         <TemplateIntroSection />
         <DesignIntroSection />
         <GovernSection />
-        <BestTestmonialSection />
+        {/* <BestTestmonialSection /> */}
         <ClosingSection />
       </div>
     </main>

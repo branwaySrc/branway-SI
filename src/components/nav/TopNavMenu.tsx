@@ -47,7 +47,7 @@ export const TopNavMenu = () => {
             href={"/"}
             className="text-[#FFFFFF50] flex items-center gap-2"
           >
-            <p>디자인 서비스</p>
+            <p>디자인 솔루션</p>
             <Badge variant="outline">출시예정</Badge>
           </Link>
         </MenuItem>
@@ -57,7 +57,7 @@ export const TopNavMenu = () => {
             href={"/pricing"}
             className="text-[#FFFFFF50] flex items-center gap-2"
           >
-            <p>템플릿 소스 구매</p>
+            <p>템플릿 소스 솔루션</p>
             <Badge variant="outline">출시예정</Badge>
           </Link>
         </MenuItem>
