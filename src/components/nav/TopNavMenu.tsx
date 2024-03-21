@@ -31,7 +31,7 @@ export const TopNavMenu = () => {
         </MenuItem>
         <MenuItem bg={"#000000E8"} px={4} py={2}>
           <Link
-            prefetch={false}
+            prefetch={true}
             href={"/imweb"}
             className="flex items-center gap-2"
           >
@@ -54,7 +54,7 @@ export const TopNavMenu = () => {
         <MenuItem bg={"#000000E8"} px={4} py={2}>
           <Link
             prefetch={false}
-            href={"/pricing"}
+            href={"/"}
             className="text-[#FFFFFF50] flex items-center gap-2"
           >
             <p>템플릿 소스 솔루션</p>
@@ -74,7 +74,7 @@ export const TopNavMenu = () => {
         </MenuItem>
 
         <MenuItem bg={"#000000E8"} px={4} py={2}>
-          <Link prefetch={false} href={"/pricing"}>
+          <Link prefetch={true} href={"/pricing"}>
             서비스 가격정책
           </Link>
         </MenuItem>
