@@ -22,7 +22,7 @@ export default function PricePlan() {
         />
         <Badge colorScheme="green">이벤트중</Badge>
       </div>
-      <div className="px-10 text-sm bg-neutral-900 py-4">
+      <div className="px-10 text-sm pb-4 pt-2 text-center">
         브랜웨이는 2024년도부터 독립적인 온라인 창업 서비스 런칭을 위한
         포트폴리오 이벤트를 진행중에 있습니다. <br />
         <br />
