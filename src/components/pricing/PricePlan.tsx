@@ -13,7 +13,7 @@ export default function PricePlan() {
 
   return (
     <Section className="flex flex-col w-full border border-t-transparent border-[#FFFFFF30] pb-10">
-      <div className="flex flex-col gap-6 items-center my-10 self-center">
+      <div className="flex flex-col gap-6 items-center mt-10 mb-4 self-center">
         <Image
           src={"/imweb_transparent.png"}
           alt="imweb"
@@ -22,7 +22,7 @@ export default function PricePlan() {
         />
         <Badge colorScheme="green">이벤트중</Badge>
       </div>
-      <div className="px-10 text-sm pb-4 pt-2 text-center">
+      <div className="px-10 text-sm pb-4 pt-2 text-center max-w-[400px] self-center">
         브랜웨이는 2024년도부터 독립적인 온라인 창업 서비스 런칭을 위한
         포트폴리오 이벤트를 진행중에 있습니다. <br />
         <br />
